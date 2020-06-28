@@ -1,18 +1,22 @@
 <template>
-  <div id="app" class="">
+  <div class="antialiased bg-app-background pb-56">
     <div id="nav">
-      <router-link to="/">Home</router-link>
+      <AppBar />
+      <SecondaryBar />
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
-<style>
+<script>
+import AppBar from '@/components/global/AppBar.vue'
+import SecondaryBar from '@/components/global/SecondaryBar.vue'
+export default {
+  components: {
+    AppBar,
+    SecondaryBar
+  }
+}
+</script>
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-#app {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-</style>
+<style></style>
