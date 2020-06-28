@@ -1,11 +1,10 @@
 <template>
-  <div class="home">
-    <h1 class="bg-gray-800 text-red-900">hello world</h1>
+  <div class="">
+    <!-- content here -->
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'Home'
 }
