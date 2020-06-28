@@ -1,5 +1,5 @@
 <template>
-  <div class="antialiased bg-app-background h-full pb-56">
+  <div class="antialiased bg-app-background pb-56">
     <div id="nav">
       <AppBar />
       <SecondaryBar />

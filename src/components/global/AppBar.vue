@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-darkest py-0 px-4 h-16 flex items-center">
+  <div class="bg-gray-darkest py-0 px-4 h-16 flex items-center relative">
     <!-- App logo here -->
     <a class="font-bold text-gray-lightest text-xl capitalize pr-4" href="#">
       cloud manager
@@ -7,15 +7,201 @@
     <!-- Navigation Menu -->
     <div class="flex items-center px-4 border-l border-r border-gray-900">
       <span class="font-bold capitalize text-gray-600 text-xl">Dashboard</span>
-      <div class="text-gray-600 pl-5 lg:pl-8 cursor-pointer">
-        <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg">
+      <button
+        @click="toggleNavOpen"
+        class="text-gray-600 pl-5 lg:pl-8 cursor-pointer focus:outline-none"
+      >
+        <svg
+          class="w-5 h-5 fill-current"
+          :class="[isNavOpen ? 'rotate-90' : '']"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
             d="M5 5.833l5 5 5-5L16.667 7.5 10 14.167 3.333 7.5 5 5.833z"
           />
         </svg>
-      </div>
+      </button>
+      <nav
+        v-if="isNavOpen"
+        class=" absolute w-full max-w-md shadow-md mt-32 rounded-md overflow-hidden "
+      >
+        <div class=" flex flex-col text-sm items-center">
+          <!-- instance one -->
+          <div
+            class="pt-3 flex justify-between w-full text-gray-800 bg-white capitalize"
+          >
+            <a
+              href="#"
+              class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800 bg-gray-800 text-gray-lightest"
+            >
+              Dashboard
+              <div class="ml-2 text-current">
+                <svg
+                  class="w-4 h-4 fil-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="mx-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
+              >Account management
+              <div class="ml-2">
+                <svg
+                  class="w-4 h-4 fil-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <!-- another instance  -->
+
+          <div
+            class="pt-3 flex justify-between w-full text-gray-800 bg-white capitalize"
+          >
+            <a
+              href="#"
+              class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800"
+            >
+              cost management
+              <div class="ml-2 text-current">
+                <svg
+                  class="w-4 h-4 fil-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="mx-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
+              >asset management
+              <div class="ml-2">
+                <svg
+                  class="w-4 h-4 fil-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+
+          <!-- another instance  -->
+
+          <div
+            class="pt-3 flex justify-between w-full text-gray-800 bg-white capitalize"
+          >
+            <a
+              href="#"
+              class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800"
+            >
+              security & compliance
+              <div class="ml-2 text-current">
+                <svg
+                  class="w-4 h-4 fil-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="mx-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
+              >cloud monitoring
+              <div class="ml-2">
+                <svg
+                  class="w-4 h-4 fil-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <!-- another instance  -->
+
+          <div
+            class="py-3 flex justify-between w-full text-gray-800 bg-white capitalize"
+          >
+            <a
+              href="#"
+              class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800"
+            >
+              cost optimisation
+              <div class="ml-2 text-current">
+                <svg
+                  class="w-4 h-4 fil-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="mx-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
+              >service monitoring
+              <div class="ml-2">
+                <svg
+                  class="w-4 h-4 fil-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
     </div>
     <!-- messages -->
     <a class="text-gray-lightest mx-4 lg:ml-4 lg:mr-5 relative flex" href="#">
@@ -102,18 +288,18 @@
         </svg>
       </div>
       <!-- user control -->
-      <div class="ml-4 flex items-center">
+      <div class="ml-4 block flex items-center">
         <div class="hidden lg:flex flex-col mr-4">
           <span
-            class="text-xs capitalize text-gray-lightest font-semibold tracking-wide"
+            class="text-xs capitalize text-gray-lightest font-semibold tracking-wide whitespace-no-wrap"
             >cameron williamson</span
           >
           <span class="text-xs font-semibold text-gray-400 capitalize self-end "
             >administrator</span
           >
         </div>
-        <a
-          href="#"
+
+        <div
           class="w-8 h-8 border-2 border-gray-300 rounded-full overflow-hidden hover:border-gray-200"
         >
           <img
@@ -121,10 +307,12 @@
             src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=60&q=60"
             alt="user profile"
           />
-        </a>
+        </div>
+
         <a
-          class="text-white flex items-center ml-1 lg:ml-2 hover:text-gray-200"
+          class="text-white lg:ml-1 hover:text-gray-200 relative"
           href="#"
+          @click="toggleOpen"
         >
           <svg class="w-6 h-6 fill-current " xmlns="http://www.w3.org/2000/svg">
             <path
@@ -133,6 +321,31 @@
               d="M12 20a2 2 0 110-4 2 2 0 010 4zm0-6a2 2 0 110-4 2 2 0 010 4zm0-6a2 2 0 110-4 2 2 0 010 4z"
             />
           </svg>
+          <div
+            v-if="isOpen"
+            class="bg-white shadow-lg rounded-md py-2 absolute bottom-5 -ml-24 mt-2"
+          >
+            <a
+              href="#"
+              class="block text-gray-800 capitalize px-2 py-1 hover:bg-gray-200 active:bg-gray-600 active:text-gray-100 text-sm"
+              >account</a
+            >
+            <a
+              href="#"
+              class="block text-gray-800 capitalize px-2 py-1 hover:bg-gray-200 active:bg-gray-600 active:text-gray-100 text-sm"
+              >resources</a
+            >
+            <a
+              href="#"
+              class="block text-gray-800 capitalize px-2 py-1 hover:bg-gray-200 active:bg-gray-600 active:text-gray-100 text-sm"
+              >manage users</a
+            >
+            <a
+              href="#"
+              class="block text-gray-800 capitalize px-2 py-1 hover:bg-gray-200 active:bg-gray-600 active:text-gray-100 text-sm"
+              >log out</a
+            >
+          </div>
         </a>
       </div>
     </div>
@@ -140,6 +353,20 @@
 </template>
 <script>
 export default {
-  name: 'AppBar'
+  name: 'AppBar',
+  data() {
+    return {
+      isOpen: false,
+      isNavOpen: false
+    }
+  },
+  methods: {
+    toggleOpen() {
+      this.isOpen = !this.isOpen
+    },
+    toggleNavOpen() {
+      this.isNavOpen = !this.isNavOpen
+    }
+  }
 }
 </script>
