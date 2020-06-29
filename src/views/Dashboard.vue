@@ -5,10 +5,10 @@
     <div class="flex flex-wrap lg:flex-no-wrap mt-16">
       <!-- cost overview  -->
       <div class=" bg-white flex flex-shrink-0 w-4/6 lg:w-2/6 lg:mr-2 lg:ml-4">
-        <div class="rounded-sm shadow-lg bg-app-cardBg-100 w-full">
+        <div class="rounded-sm bg-app-cardBg-100 w-full lg:shadow-lg">
           <div class="flex justify-between w-full px-4 pt-4">
             <span
-              class="font-semibold text-gray-800 tracking-wide text-sm uppercase"
+              class="font-semibold text-gray-700 tracking-wide text-sm uppercase"
               >cost overview</span
             >
             <div>
@@ -235,13 +235,13 @@
             </svg>
           </div>
           <!-- security type -->
-          <div class="flex whitespace-no-wrap mt-2 items-center mx-2">
+          <div class="flex whitespace-no-wrap mt-2 items-center mx-2 text-sm">
             <h4 class=" font-semibold text-gray-700 ">v1.0.0</h4>
             <div
-              class="ml-2 bg-success-100 border border-success-200 py-px px-2 rounded-full text-success-800 text-sm font-semibold capitalize flex flex-no-wrap"
+              class="ml-2 bg-success-100 border border-success-200 py-px px-2 rounded-full text-success-800 font-semibold capitalize flex flex-no-wrap text-xs"
             >
               <h6>23% passed</h6>
-              <span>
+              <span class="ml-2 flex items-center">
                 <svg
                   class="w-4 h-4 text-success-800 fill-current"
                   xmlns="http://www.w3.org/2000/svg"
@@ -253,13 +253,13 @@
               </span>
             </div>
           </div>
-          <div class="flex whitespace-no-wrap mt-2 items-center mx-2">
+          <div class="flex whitespace-no-wrap mt-2 items-center mx-2 text-sm">
             <h4 class=" font-semibold text-gray-700 ">v1.0.0</h4>
             <div
-              class="ml-2 bg-success-100 border border-success-200 py-px px-2 rounded-full text-success-800 text-sm font-semibold capitalize flex flex-no-wrap"
+              class="ml-2 bg-success-100 border border-success-200 py-px px-2 rounded-full text-success-800 text-xs font-semibold capitalize flex flex-no-wrap "
             >
               <h6>40% passed</h6>
-              <span>
+              <span class="ml-2 flex items-center">
                 <svg
                   class="w-4 h-4 text-success-800 fill-current"
                   xmlns="http://www.w3.org/2000/svg"
@@ -271,13 +271,13 @@
               </span>
             </div>
           </div>
-          <div class="flex whitespace-no-wrap mt-2 items-center mx-2">
-            <h4 class=" font-semibold text-gray-700 ">v1.0.0</h4>
+          <div class="flex whitespace-no-wrap mt-2 items-center mx-2 text-sm">
+            <h4 class=" font-semibold text-gray-700 ">v1.2.0</h4>
             <div
-              class="ml-2 bg-danger-100 border border-danger-200 py-px px-2 rounded-full text-danger-800 text-sm font-semibold capitalize flex flex-no-wrap"
+              class="ml-2 bg-danger-100 border border-danger-200 py-px px-2 rounded-full text-danger-800 font-semibold capitalize flex flex-no-wrap text-xs"
             >
               <h6>54% failed</h6>
-              <span class="ml-2 flex items-center">
+              <span class="ml-4 flex items-center">
                 <svg
                   class="w-4 h-4 text-danger-800 fill-current"
                   xmlns="http://www.w3.org/2000/svg"
@@ -292,10 +292,415 @@
           </div>
         </div>
       </div>
+      <!-- security overview -->
       <div
-        class="bg-white w-full lg:w-3/6 lg:rounded-sm lg:mr-4 lg:border-t lg:border-b lg:border-r lg:border-gray-200"
+        class="bg-white w-full lg:w-3/6 lg:rounded-sm lg:mr-4 lg:border-t lg:border-b lg:border-r lg:border-gray-200 pt-4"
       >
-        other
+        <!-- section header -->
+        <div class="flex">
+          <div class="flex w-1/2 items-center px-4 lg:px-0 lg:">
+            <span
+              class="font-semibold text-gray-700 tracking-wide text-sm uppercase whitespace-no-wrap"
+              >security</span
+            >
+            <div class="text-gray-700 mx-1">
+              <svg
+                class="w-5 h-5 fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.25 12a.75.75 0 01.75-.75h12a.75.75 0 110 1.5H6a.75.75 0 01-.75-.75z"
+                />
+              </svg>
+            </div>
+            <span
+              class="text-success-700 bg-success-100 rounded-full px-2 py-px border border-success-200 text-sm font-semibold whitespace-no-wrap"
+              >compliance score</span
+            >
+            <div class="text-gray-700 ml-auto">
+              <svg
+                class="w-5 h-5 fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.16 0a6.09 6.09 0 100 12.181 6.091 6.091 0 000-12.18zM4.21 2.12a2.018 2.018 0 012.023 2.023 2.017 2.017 0 01-2.022 2.022 2.017 2.017 0 01-2.022-2.022A2.018 2.018 0 014.21 2.119zm8.65 6.797c-.214.5-.484.974-.805 1.413l6.09 6.09a.694.694 0 010 .975.696.696 0 01-.974 0l-6.017-6.042a7.325 7.325 0 01-2.655 1.609v1.072c0 .343.289.633.633.633h1.705v1.706c0 .343.29.633.634.633h1.705v1.705c0 .343.29.633.634.633h1.729l.439.44c.266.265 2.937.398 3.605-.269.669-.669.534-3.34.268-3.605L12.86 8.915z"
+                  fill="#486581"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="flex items-center ml-auto px-4">
+            <span
+              class="mx-4 text-gray-900 font-semibold text-xs uppercase whitespace-no-wrap"
+              >currently viewing</span
+            >
+            <div class="flex items-center">
+              <div>
+                <svg
+                  width="18"
+                  height="14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M11.571 3.861l1.512-1.512.101-.637c-2.756-2.506-7.137-2.221-9.621.593a6.991 6.991 0 00-1.475 2.763l.542-.076 3.024-.5.234-.238c1.345-1.477 3.62-1.676 5.174-.419l.509.026z"
+                      fill="#EA4335"
+                    />
+                    <path
+                      d="M15.238 5.024a6.813 6.813 0 00-2.054-3.312l-2.122 2.123a3.775 3.775 0 011.384 2.993v.376a1.89 1.89 0 011.89 1.89 1.871 1.871 0 01-1.89 1.867H8.663l-.372.404v2.266l.372.355h3.783c2.714.021 4.931-2.14 4.952-4.854a4.915 4.915 0 00-2.16-4.108z"
+                      fill="#4285F4"
+                    />
+                    <path
+                      d="M4.885 13.986h3.778v-3.025H4.885c-.268 0-.532-.058-.775-.17l-.536.165-1.523 1.513-.133.514a4.902 4.902 0 002.967 1.003z"
+                      fill="#34A853"
+                    />
+                    <path
+                      d="M4.885 4.175a4.914 4.914 0 00-2.967 8.808l2.192-2.191a1.89 1.89 0 112.5-2.5L8.8 6.101a4.908 4.908 0 00-3.916-1.926z"
+                      fill="#FBBC05"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <path fill="#fff" d="M0 0h17.399v14H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <span class="uppercase font-semibold text-gray-800">gcp</span>
+            </div>
+            <div class="ml-4">
+              <h6 class="font-xs text-gray-600 font-semibold">change</h6>
+              <div class="w-full bg-gray-400 h-px2"></div>
+            </div>
+          </div>
+        </div>
+        <!-- section body -->
+        <div class="flex py-4 mx-4 justify-between">
+          <div class="w-full flex flex-col justify-center">
+            <!-- card instance-1 -->
+            <div
+              class="border rounded-md border-gray-200 py-6 relative overflow-hidden"
+            >
+              <div class="flex justify-around">
+                <span class="uppercase font-semibold text-sm text-gray-800"
+                  >gdpr</span
+                >
+                <span class="font-bold text-base text-blue-700">23%</span>
+                <div class="font-semibold text-sm text-gray-700">
+                  23/
+                  <span class="text-purple-700">50</span>
+                </div>
+              </div>
+              <!-- keys -->
+              <div class="flex justify-around pt-2 px-2">
+                <div class="flex items-center">
+                  <div class="h-2 w-2 bg-gray-800 rounded-full"></div>
+                  <span
+                    class="capitalize text-xs font-semibold text-gray-800 pl-1"
+                    >enabled</span
+                  >
+                </div>
+                <div class="flex items-center pl-3">
+                  <div class="h-2 w-2 bg-blue-700 rounded-full"></div>
+                  <span
+                    class="capitalize text-xs font-semibold text-blue-700 pl-1"
+                    >enabled</span
+                  >
+                </div>
+                <div class="flex items-center pl-3">
+                  <div class="h-2 w-2 bg-purple-800 rounded-full"></div>
+                  <span
+                    class="capitalize text-xs font-semibold text-purple-800 pl-1"
+                    >enabled</span
+                  >
+                </div>
+              </div>
+              <div
+                class="w-16 h-12 bg-success-200 absolute transform rotate-45 label"
+              ></div>
+              <span class="ml-2 flex items-center absolute labelMark">
+                <svg
+                  class="w-4 h-4 text-success-800 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.333 12.988L5.59 10.244l-1.178 1.178 3.922 3.923 8.09-8.09-1.179-1.177-6.91 6.91z"
+                  />
+                </svg>
+              </span>
+            </div>
+            <!-- card instance-2 -->
+
+            <div
+              class="border rounded-md border-gray-200 py-6 relative overflow-hidden mt-4"
+            >
+              <div class="flex justify-around">
+                <span class="uppercase font-semibold text-sm text-gray-800"
+                  >hipaa</span
+                >
+                <span class="font-bold text-base text-blue-700">54%</span>
+                <div class="font-semibold text-sm text-gray-700">
+                  43/
+                  <span class="text-purple-700">50</span>
+                </div>
+              </div>
+              <!-- keys -->
+              <div class="flex justify-around pt-2 px-2">
+                <div class="flex items-center">
+                  <div class="h-2 w-2 bg-gray-800 rounded-full"></div>
+                  <span
+                    class="capitalize text-xs font-semibold text-gray-800 pl-1"
+                    >enabled</span
+                  >
+                </div>
+                <div class="flex items-center pl-3">
+                  <div class="h-2 w-2 bg-blue-700 rounded-full"></div>
+                  <span
+                    class="capitalize text-xs font-semibold text-blue-700 pl-1"
+                    >enabled</span
+                  >
+                </div>
+                <div class="flex items-center pl-3">
+                  <div class="h-2 w-2 bg-purple-800 rounded-full"></div>
+                  <span
+                    class="capitalize text-xs font-semibold text-purple-800 pl-1"
+                    >enabled</span
+                  >
+                </div>
+              </div>
+              <div
+                class="w-16 h-12 bg-success-200 absolute transform rotate-45 label"
+              ></div>
+              <span class="ml-2 flex items-center absolute labelMark">
+                <svg
+                  class="w-4 h-4 text-success-800 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.333 12.988L5.59 10.244l-1.178 1.178 3.922 3.923 8.09-8.09-1.179-1.177-6.91 6.91z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="w-full ml-4">
+            <!-- card instance-1 -->
+            <div
+              class="border rounded-md border-gray-200 py-6 relative overflow-hidden"
+            >
+              <div class="flex justify-around">
+                <span class="uppercase font-semibold text-sm text-gray-800"
+                  >iso 27..</span
+                >
+                <span class="font-bold text-base text-blue-700">65%</span>
+                <div class="font-semibold text-sm text-gray-700">
+                  18/
+                  <span class="text-purple-700">70</span>
+                </div>
+              </div>
+              <!-- keys -->
+              <div class="flex justify-around pt-2 px-2">
+                <div class="flex items-center">
+                  <div class="h-2 w-2 bg-gray-800 rounded-full"></div>
+                  <span
+                    class="capitalize text-xs font-semibold text-gray-800 pl-1"
+                    >enabled</span
+                  >
+                </div>
+                <div class="flex items-center pl-3">
+                  <div class="h-2 w-2 bg-blue-700 rounded-full"></div>
+                  <span
+                    class="capitalize text-xs font-semibold text-blue-700 pl-1"
+                    >enabled</span
+                  >
+                </div>
+                <div class="flex items-center pl-3">
+                  <div class="h-2 w-2 bg-purple-800 rounded-full"></div>
+                  <span
+                    class="capitalize text-xs font-semibold text-purple-800 pl-1"
+                    >enabled</span
+                  >
+                </div>
+              </div>
+              <div
+                class="w-16 h-12 bg-success-200 absolute transform rotate-45 label"
+              ></div>
+              <span class="ml-2 flex items-center absolute labelMark">
+                <svg
+                  class="w-4 h-4 text-success-800 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.333 12.988L5.59 10.244l-1.178 1.178 3.922 3.923 8.09-8.09-1.179-1.177-6.91 6.91z"
+                  />
+                </svg>
+              </span>
+            </div>
+            <!-- card instance-2 -->
+
+            <div
+              class="border rounded-md border-gray-200 py-6 relative overflow-hidden mt-4"
+            >
+              <div class="flex justify-around">
+                <span class="uppercase font-semibold text-sm text-gray-800"
+                  >nist c..</span
+                >
+                <span class="font-bold text-base text-blue-700">30%</span>
+                <div class="font-semibold text-sm text-gray-700">
+                  65/
+                  <span class="text-purple-700">70</span>
+                </div>
+              </div>
+              <!-- keys -->
+              <div class="flex justify-around pt-2 px-2">
+                <div class="flex items-center">
+                  <div class="h-2 w-2 bg-gray-800 rounded-full"></div>
+                  <span
+                    class="capitalize text-xs font-semibold text-gray-800 pl-1"
+                    >enabled</span
+                  >
+                </div>
+                <div class="flex items-center pl-3">
+                  <div class="h-2 w-2 bg-blue-700 rounded-full"></div>
+                  <span
+                    class="capitalize text-xs font-semibold text-blue-700 pl-1"
+                    >enabled</span
+                  >
+                </div>
+                <div class="flex items-center pl-3">
+                  <div class="h-2 w-2 bg-purple-800 rounded-full"></div>
+                  <span
+                    class="capitalize text-xs font-semibold text-purple-800 pl-1"
+                    >enabled</span
+                  >
+                </div>
+              </div>
+              <div
+                class="w-16 h-12 bg-success-200 absolute transform rotate-45 label"
+              ></div>
+              <span class="ml-2 flex items-center absolute labelMark">
+                <svg
+                  class="w-4 h-4 text-success-800 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.333 12.988L5.59 10.244l-1.178 1.178 3.922 3.923 8.09-8.09-1.179-1.177-6.91 6.91z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="w-full ml-4">
+            <!-- card instance-1 -->
+            <div
+              class="border rounded-md border-gray-200 py-6 relative overflow-hidden"
+            >
+              <div class="flex justify-around">
+                <span class="uppercase font-semibold text-sm text-gray-800"
+                  >gdpr</span
+                >
+                <span class="font-bold text-base text-blue-700">23%</span>
+                <div class="font-semibold text-sm text-gray-700">
+                  23/
+                  <span class="text-purple-700">50</span>
+                </div>
+              </div>
+              <!-- keys -->
+              <div class="flex justify-around pt-2 px-2">
+                <div class="flex items-center">
+                  <div class="h-2 w-2 bg-gray-800 rounded-full"></div>
+                  <span
+                    class="capitalize text-xs font-semibold text-gray-800 pl-1"
+                    >enabled</span
+                  >
+                </div>
+                <div class="flex items-center pl-3">
+                  <div class="h-2 w-2 bg-blue-700 rounded-full"></div>
+                  <span
+                    class="capitalize text-xs font-semibold text-blue-700 pl-1"
+                    >enabled</span
+                  >
+                </div>
+                <div class="flex items-center pl-3">
+                  <div class="h-2 w-2 bg-purple-800 rounded-full"></div>
+                  <span
+                    class="capitalize text-xs font-semibold text-purple-800 pl-1"
+                    >enabled</span
+                  >
+                </div>
+              </div>
+              <div
+                class="w-16 h-12 bg-success-200 absolute transform rotate-45 label"
+              ></div>
+              <span class="ml-2 flex items-center absolute labelMark">
+                <svg
+                  class="w-4 h-4 text-success-800 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.333 12.988L5.59 10.244l-1.178 1.178 3.922 3.923 8.09-8.09-1.179-1.177-6.91 6.91z"
+                  />
+                </svg>
+              </span>
+            </div>
+            <!-- card instance-2 -->
+
+            <div
+              class="border rounded-md border-gray-200 py-6 relative overflow-hidden mt-4"
+            >
+              <div class="flex justify-around">
+                <span class="uppercase font-semibold text-sm text-gray-800"
+                  >hipaa</span
+                >
+                <span class="font-bold text-base text-blue-700">54%</span>
+                <div class="font-semibold text-sm text-gray-700">
+                  43/
+                  <span class="text-purple-700">50</span>
+                </div>
+              </div>
+              <!-- keys -->
+              <div class="flex justify-around pt-2 px-2">
+                <div class="flex items-center">
+                  <div class="h-2 w-2 bg-gray-800 rounded-full"></div>
+                  <span
+                    class="capitalize text-xs font-semibold text-gray-800 pl-1"
+                    >enabled</span
+                  >
+                </div>
+                <div class="flex items-center pl-3">
+                  <div class="h-2 w-2 bg-blue-700 rounded-full"></div>
+                  <span
+                    class="capitalize text-xs font-semibold text-blue-700 pl-1"
+                    >enabled</span
+                  >
+                </div>
+                <div class="flex items-center pl-3">
+                  <div class="h-2 w-2 bg-purple-800 rounded-full"></div>
+                  <span
+                    class="capitalize text-xs font-semibold text-purple-800 pl-1"
+                    >enabled</span
+                  >
+                </div>
+              </div>
+              <div
+                class="w-16 h-12 bg-success-200 absolute transform rotate-45 label"
+              ></div>
+              <span class="ml-2 flex items-center absolute labelMark">
+                <svg
+                  class="w-4 h-4 text-success-800 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.333 12.988L5.59 10.244l-1.178 1.178 3.922 3.923 8.09-8.09-1.179-1.177-6.91 6.91z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -314,5 +719,13 @@ export default {
 <style lang="css" scoped>
 .app {
   min-width: 768px;
+}
+.label {
+  top: -30px;
+  right: -26px;
+}
+.labelMark {
+  top: 0;
+  right: 5px;
 }
 </style>
