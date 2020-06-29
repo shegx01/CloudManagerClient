@@ -4,7 +4,7 @@
   >
     <!-- current page -->
     <div class="relative self-center flex">
-      <h2 class="text-gray-800 capitalize font-medium">dashboard</h2>
+      <h2 class="text-gray-800 capitalize font-medium">{{ currentDir }}</h2>
       <span class="block h-1 bg-gray-800 w-full absolute -bottom-3"></span>
     </div>
     <!-- secondary menu -->
@@ -90,6 +90,10 @@ export default {
     },
     currentFilter: {
       default: 'us west',
+      type: String
+    },
+    currentDir: {
+      required: true,
       type: String
     }
   },

@@ -1,6 +1,12 @@
 module.exports = {
   purge: [],
   theme: {
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1366px',
+      xl: '1440px'
+    },
     extend: {
       fontFamily: {
         sans: [
@@ -79,7 +85,8 @@ module.exports = {
           darkest: '#014D40'
         },
         app: {
-          background: '#F5FAFF'
+          background: '#F5FAFF',
+          cardBg: '#FBFCFE'
         }
       },
       spacing: {
