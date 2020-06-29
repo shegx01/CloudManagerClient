@@ -4,7 +4,7 @@
     <SecondaryBar currentDir="dashboard" />
     <div class="flex flex-wrap lg:flex-no-wrap mt-16">
       <!-- cost overview  -->
-      <div class=" bg-white flex flex-shrink-0 w-4/6 lg:w-2/6 lg:mr-2 lg:ml-4">
+      <div class=" bg-white flex flex-shrink-0 w-4/6 lg:w-2/6 lg:mx-2 ">
         <div class="rounded-sm bg-app-cardBg-100 w-full lg:shadow-lg">
           <div class="flex justify-between w-full px-4 pt-4">
             <span
@@ -199,10 +199,10 @@
       </div>
       <!-- cis security overview -->
       <div
-        class=" flex flex-shrink-0 flex-wrap justify-center bg-white w-2/6 items-center lg:w-1/6 lg:ml-2 lg:p-0 lg:rounded-sm lg:border-l lg:border-t lg:border-b border-gray-200 "
+        class=" flex flex-shrink-0 flex-wrap justify-center bg-white w-2/6 items-center lg:w-auto lg:p-0 lg:rounded-sm lg:border-l lg:border-t lg:border-b border-gray-200"
       >
         <div
-          class=" flex flex-col items-center self-center pb-4 rounded-sm shadow bg-gray-100 mx-0"
+          class=" flex flex-col items-center self-center pb-4 rounded-sm shadow bg-gray-100 mx-0 lg:ml-2 lg:shadow-none"
         >
           <div class="mt-10">
             <svg
@@ -294,7 +294,7 @@
       </div>
       <!-- security overview -->
       <div
-        class="bg-white w-full lg:w-3/6 lg:rounded-sm lg:mr-4 lg:border-t lg:border-b lg:border-r lg:border-gray-200 pt-4"
+        class="bg-white w-full lg:rounded-sm lg:mr-2 lg:border-t lg:border-b lg:border-r lg:border-gray-200 pt-4"
       >
         <!-- section header -->
         <div class="flex">
@@ -378,7 +378,7 @@
           </div>
         </div>
         <!-- section body -->
-        <div class="flex py-4 mx-4 justify-between">
+        <div class="flex py-4 mx-4 justify-between lg:mx-0">
           <div class="w-full flex flex-col justify-center">
             <!-- card instance-1 -->
             <div
@@ -486,7 +486,7 @@
               </span>
             </div>
           </div>
-          <div class="w-full ml-4">
+          <div class="w-full ml-4 lg:ml-2">
             <!-- card instance-1 -->
             <div
               class="border rounded-md border-gray-200 py-6 relative overflow-hidden"
@@ -593,19 +593,19 @@
               </span>
             </div>
           </div>
-          <div class="w-full ml-4">
+          <div class="w-full ml-4 lg:mx-2">
             <!-- card instance-1 -->
             <div
               class="border rounded-md border-gray-200 py-6 relative overflow-hidden"
             >
               <div class="flex justify-around">
                 <span class="uppercase font-semibold text-sm text-gray-800"
-                  >gdpr</span
+                  >plc o..</span
                 >
-                <span class="font-bold text-base text-blue-700">23%</span>
+                <span class="font-bold text-base text-blue-700">13%</span>
                 <div class="font-semibold text-sm text-gray-700">
-                  23/
-                  <span class="text-purple-700">50</span>
+                  29/
+                  <span class="text-purple-700">80</span>
                 </div>
               </div>
               <!-- keys -->
@@ -633,15 +633,16 @@
                 </div>
               </div>
               <div
-                class="w-16 h-12 bg-success-200 absolute transform rotate-45 label"
+                class="w-16 h-12 bg-danger-200 absolute transform rotate-45 label"
               ></div>
               <span class="ml-2 flex items-center absolute labelMark">
                 <svg
-                  class="w-4 h-4 text-success-800 fill-current"
+                  class="w-4 h-4 text-danger-800 fill-current"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M8.333 12.988L5.59 10.244l-1.178 1.178 3.922 3.923 8.09-8.09-1.179-1.177-6.91 6.91z"
+                    d="M11.803 5.137l-.94-.94L8 7.06 5.137 4.197l-.94.94L7.06 8l-2.863 2.863.94.94L8 8.94l2.863 2.863.94-.94L8.94 8l2.863-2.863z"
+                    fill="#000"
                   />
                 </svg>
               </span>
@@ -649,55 +650,31 @@
             <!-- card instance-2 -->
 
             <div
-              class="border rounded-md border-gray-200 py-6 relative overflow-hidden mt-4"
+              class="border rounded-md border-danger-200 py-6 relative overflow-hidden mt-4 bg-danger-lightest"
             >
-              <div class="flex justify-around">
-                <span class="uppercase font-semibold text-sm text-gray-800"
-                  >hipaa</span
+              <div class="flex items-center">
+                <h6
+                  class="text-xs leading-loose ml-2 text-danger-darkest font-semibold"
                 >
-                <span class="font-bold text-base text-blue-700">54%</span>
-                <div class="font-semibold text-sm text-gray-700">
-                  43/
-                  <span class="text-purple-700">50</span>
+                  One or more test(s) are failing <br />
+                  Manual intervention required
+                </h6>
+                <div
+                  class="text-white bg-danger-800 w-6 h-6 flex items-center justify-center rounded-full ml-auto mr-1"
+                >
+                  <svg
+                    class="w-4 h-4 fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.253 3.333L10.919 8l-4.666 4.667-1.17-1.167L8.586 8 5.083 4.5l1.17-1.167z"
+                      fill="#F0F4F8"
+                    />
+                  </svg>
                 </div>
               </div>
-              <!-- keys -->
-              <div class="flex justify-around pt-2 px-2">
-                <div class="flex items-center">
-                  <div class="h-2 w-2 bg-gray-800 rounded-full"></div>
-                  <span
-                    class="capitalize text-xs font-semibold text-gray-800 pl-1"
-                    >enabled</span
-                  >
-                </div>
-                <div class="flex items-center pl-3">
-                  <div class="h-2 w-2 bg-blue-700 rounded-full"></div>
-                  <span
-                    class="capitalize text-xs font-semibold text-blue-700 pl-1"
-                    >enabled</span
-                  >
-                </div>
-                <div class="flex items-center pl-3">
-                  <div class="h-2 w-2 bg-purple-800 rounded-full"></div>
-                  <span
-                    class="capitalize text-xs font-semibold text-purple-800 pl-1"
-                    >enabled</span
-                  >
-                </div>
-              </div>
-              <div
-                class="w-16 h-12 bg-success-200 absolute transform rotate-45 label"
-              ></div>
-              <span class="ml-2 flex items-center absolute labelMark">
-                <svg
-                  class="w-4 h-4 text-success-800 fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.333 12.988L5.59 10.244l-1.178 1.178 3.922 3.923 8.09-8.09-1.179-1.177-6.91 6.91z"
-                  />
-                </svg>
-              </span>
             </div>
           </div>
         </div>
