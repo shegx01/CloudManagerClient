@@ -299,14 +299,17 @@
           >
         </div>
 
-        <div
-          class="w-8 h-8 border-2 border-gray-300 rounded-full overflow-hidden hover:border-gray-200"
-        >
-          <img
-            class="w-full h-full object-cover"
-            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=60&q=60"
-            alt="user profile"
-          />
+        <div class="w-8 h-8 hover:border-gray-200 relative">
+          <div class="overflow-hidden rounded-full border-2 border-gray-300">
+            <img
+              class="w-full h-full object-cover"
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=60&q=60"
+              alt="user profile"
+            />
+          </div>
+          <div
+            class="w-3 h-3 bg-success-600 absolute -mt-3 ml-6 rounded-full border-2 border-gray-darkest"
+          ></div>
         </div>
 
         <a
