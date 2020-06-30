@@ -661,7 +661,7 @@
                   Manual intervention required
                 </h6>
                 <div
-                  class="text-white bg-danger-800 w-6 h-6 flex items-center justify-center rounded-full ml-auto mr-1"
+                  class="text-white bg-danger-600 w-7 h-7 flex items-center justify-center rounded-full ml-auto mr-1 border-2 border-white cursor-pointer"
                 >
                   <svg
                     class="w-4 h-4 fill-current"
@@ -682,8 +682,8 @@
       </div>
     </div>
     <!-- cost optimisation opportunity -->
-    <div class="mt-8 bg-white">
-      <div class="flex justify-between w-full max-w-sm px-4 pt-4 lg:max-w-md">
+    <div class="mt-8 bg-white py-4 pb-6 lg:mx-2 lg:border lg:border-gray-200">
+      <div class="flex justify-between w-full max-w-xs px-4 pt-4 lg:max-w-md">
         <span
           class="font-semibold text-gray-700 tracking-wide text-sm uppercase"
           >cost optimisation opportunity</span
@@ -730,11 +730,11 @@
         </div>
       </div>
       <div class="flex flex-wrap w-full">
-        <div class="pt-4 flex w-full">
+        <div
+          class="pt-4 flex w-full flex-shrink-0 mx-4 justify-around  lg:w-2/5"
+        >
           <!-- expenses card-->
-          <div
-            class="flex flex-col max-w-xs border border-gray-300 rounded-sm items-center py-2"
-          >
+          <div class="flex flex-col max-w-xs rounded shadow items-center py-4">
             <div>
               <span
                 class="text-success-darkest text-xs py-px2 px-2 bg-success-lightest rounded-full uppercase font-semibold"
@@ -776,18 +776,18 @@
                   </svg>
                 </div>
                 <span
-                  class="text-xs font-semibold capitalize font-gray-700 pl-1"
+                  class="text-xs font-semibold capitalize text-gray-700 pl-1"
                   >compute</span
                 >
               </div>
-              <span class="text-5xl text-success-700"
+              <span class="text-5xl text-success-700 mx-4"
                 ><svg
                   class="w-3 h-3 fill-current"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle cx="7" cy="6" r="4" /></svg
               ></span>
-              <span class="font-semibold text-lg text-gray-800">$6,934</span>
+              <span class="font-semibold text-gray-700">$6,934</span>
             </div>
             <!-- azure option -->
 
@@ -820,7 +820,7 @@
                   </svg>
                 </div>
                 <span
-                  class="text-xs font-semibold capitalize font-success-700 pl-1"
+                  class="text-xs font-semibold capitalize text-gray-700 pl-1"
                   >strorage</span
                 >
               </div>
@@ -831,7 +831,7 @@
                 >
                   <circle cx="6" cy="7" r="4" /></svg
               ></span>
-              <span class="font-semibold text-lg text-gray-800">$43,281</span>
+              <span class="font-semibold text-gray-700">$43,281</span>
             </div>
             <!-- gcp option -->
 
@@ -876,7 +876,7 @@
                   </svg>
                 </div>
                 <span
-                  class="text-xs font-semibold capitalize font-success-700 pl-1"
+                  class="text-xs font-semibold capitalize text-gray-700 pl-1"
                   >network</span
                 >
               </div>
@@ -887,57 +887,46 @@
                 >
                   <circle cx="6" cy="7" r="4" /></svg
               ></span>
-              <span class="font-semibold text-lg text-gray-800">$1,221</span>
+              <span class="font-semibold text-gray-700">$1,221</span>
             </div>
           </div>
-          <!-- cost card -->
+          <!-- cost card-->
 
-          <div
-            class="flex flex-col max-w-xs border border-gray-300 rounded-sm items-center py-2"
-          >
-            <div>
+          <div class="flex flex-col max-w-xs  rounded shadow items-center py-4">
+            <div class="flex items-center justify-between">
               <span
                 class="text-success-darkest text-xs py-px2 px-2 bg-success-lightest rounded-full uppercase font-semibold"
-                >cost saved last month</span
+                >cost based on tasks</span
               >
+              <div class="text-gray-700 ml-2">
+                <svg
+                  class="fill-current w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.61 2.657a.49.49 0 01.49.49v9.81a.49.49 0 01-.981 0v-9.81a.49.49 0 01.49-.49z"
+                    fill="#334E68"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.919 10.648a.491.491 0 010 .694l-1.962 1.962a.491.491 0 01-.695 0L1.3 11.342a.491.491 0 01.695-.694l1.614 1.616 1.615-1.616a.491.491 0 01.695 0zm1.614-.634a.49.49 0 01.49-.49h2.944a.49.49 0 110 .98H8.024a.49.49 0 01-.49-.49zm0-2.943a.49.49 0 01.49-.49h4.905a.49.49 0 110 .98H8.024a.49.49 0 01-.49-.49zm0-2.942a.49.49 0 01.49-.49h6.867a.49.49 0 010 .98H8.024a.49.49 0 01-.49-.49zm0 8.828a.49.49 0 01.49-.49h.982a.49.49 0 010 .98h-.981a.49.49 0 01-.49-.49z"
+                    fill="#334E68"
+                  />
+                </svg>
+              </div>
             </div>
-            <!-- product item 
-            aws option -->
+            <!-- product type 
+            reschedling -->
             <div
               class="flex items-center justify-between flex-shrink-0 w-full px-8 pt-4"
             >
               <div class="flex items-center">
-                <div>
-                  <svg
-                    width="24"
-                    height="14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0)">
-                      <path
-                        d="M7.366 5.062c0 .282.03.51.083.677.068.189.15.372.244.548a.33.33 0 01.053.175c0 .076-.046.152-.145.228l-.479.32a.365.365 0 01-.198.068c-.076 0-.152-.038-.228-.106a2.353 2.353 0 01-.274-.358 5.855 5.855 0 01-.236-.449c-.593.7-1.34 1.05-2.237 1.05-.639 0-1.149-.182-1.522-.548-.372-.365-.563-.852-.563-1.46 0-.647.229-1.172.693-1.568.464-.396 1.08-.593 1.864-.593.259 0 .525.022.806.06.282.039.571.1.875.168v-.556c0-.578-.121-.981-.357-1.217-.244-.236-.655-.35-1.24-.35-.267 0-.54.03-.822.099a6.049 6.049 0 00-.822.259 2.193 2.193 0 01-.266.099.464.464 0 01-.122.022c-.107 0-.16-.076-.16-.235v-.373c0-.122.016-.213.053-.267a.569.569 0 01.214-.16 4.38 4.38 0 01.958-.342A4.615 4.615 0 014.725.11c.906 0 1.568.205 1.994.616.418.41.631 1.035.631 1.872v2.465h.016zm-3.09 1.157c.251 0 .51-.046.784-.137.274-.092.518-.26.723-.487.122-.145.213-.305.259-.487a2.73 2.73 0 00.076-.662v-.32c-.231-.056-.465-.1-.7-.13a5.731 5.731 0 00-.716-.045c-.51 0-.882.099-1.133.304-.251.206-.373.495-.373.875 0 .358.091.624.281.807.183.19.45.282.8.282zm6.11.821c-.137 0-.228-.023-.289-.076-.06-.045-.114-.152-.16-.297L8.15.786A1.329 1.329 0 018.081.48c0-.121.06-.19.182-.19h.746c.145 0 .244.023.297.076.06.046.106.153.152.297l1.278 5.037L11.923.664c.038-.152.084-.251.145-.297a.525.525 0 01.304-.076h.609c.144 0 .243.023.304.076.061.046.114.153.145.297l1.202 5.098L15.948.664c.046-.152.1-.251.152-.297a.496.496 0 01.297-.076h.708c.122 0 .19.061.19.19 0 .039-.008.077-.015.122a1.084 1.084 0 01-.053.19l-1.834 5.882c-.046.152-.1.251-.16.297a.486.486 0 01-.29.076h-.653c-.145 0-.244-.023-.305-.076-.06-.053-.114-.152-.144-.305L12.66 1.76l-1.172 4.9c-.038.152-.083.25-.144.304-.061.053-.168.076-.304.076h-.655zm9.778.206c-.396 0-.792-.046-1.172-.137-.38-.092-.677-.19-.875-.305-.122-.068-.206-.144-.236-.213a.537.537 0 01-.046-.213V5.99c0-.16.061-.236.175-.236.047 0 .093.008.137.023.046.016.114.046.19.076.27.118.55.208.837.267.298.06.602.09.906.09.48 0 .852-.083 1.11-.25a.82.82 0 00.396-.723.741.741 0 00-.205-.533c-.137-.144-.396-.274-.768-.395l-1.104-.343c-.555-.175-.966-.433-1.217-.776a1.813 1.813 0 01-.38-1.103c0-.32.068-.601.205-.845.137-.243.32-.456.548-.624.228-.175.487-.304.791-.395.304-.091.624-.13.959-.13.167 0 .342.008.51.03.174.024.334.054.494.085.152.038.297.076.434.121.137.046.243.092.32.137a.66.66 0 01.228.19.41.41 0 01.068.252v.357c0 .16-.06.244-.175.244-.06 0-.16-.03-.289-.092a3.482 3.482 0 00-1.461-.296c-.434 0-.776.068-1.012.213-.236.144-.358.365-.358.677 0 .213.076.395.229.54.152.145.433.29.837.419l1.08.342c.548.175.944.418 1.18.73.235.312.35.67.35 1.066 0 .327-.069.624-.198.882-.137.259-.32.487-.556.67-.236.19-.517.327-.844.426-.343.106-.7.16-1.088.16z"
-                        fill="#252F3E"
-                      />
-                      <path
-                        d="M21.602 10.944c-2.504 1.849-6.14 2.83-9.268 2.83-4.383 0-8.332-1.62-11.314-4.314-.236-.213-.023-.502.258-.335 3.227 1.872 7.206 3.006 11.322 3.006 2.778 0 5.829-.579 8.636-1.766.419-.19.776.274.366.579zm1.042-1.187c-.32-.411-2.115-.198-2.93-.1-.243.031-.28-.182-.06-.342 1.43-1.004 3.781-.715 4.055-.38.274.342-.076 2.693-1.415 3.82-.205.175-.403.083-.312-.145.304-.753.982-2.45.662-2.853z"
-                        fill="#CB6E17"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0">
-                        <path
-                          fill="#fff"
-                          transform="translate(.867 .086)"
-                          d="M0 0h22.98v13.733H0z"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </div>
                 <span
-                  class="text-xs font-semibold capitalize font-gray-700 pl-1"
-                  >compute</span
+                  class="text-xs font-semibold capitalize text-gray-700 pl-1"
+                  >rescheduling</span
                 >
               </div>
               <span class="text-5xl text-success-700"
@@ -947,41 +936,38 @@
                 >
                   <circle cx="7" cy="6" r="4" /></svg
               ></span>
-              <span class="font-semibold text-lg text-gray-800">$6,934</span>
+              <span class="font-semibold text-gray-700">$6,934</span>
             </div>
-            <!-- azure option -->
+            <!-- reservation -->
 
             <div
               class="flex items-center justify-between flex-shrink-0 w-full px-8 pt-2"
             >
               <div class="flex items-center">
-                <div>
-                  <svg
-                    width="19"
-                    height="15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0)">
-                      <path
-                        d="M9.041 13.468c2.27-.401 4.145-.733 4.166-.738l.04-.008-2.143-2.549A362.654 362.654 0 018.96 7.612c0-.013 2.213-6.106 2.225-6.128a982.13 982.13 0 013.65 6.303l3.671 6.363.028.048h-6.81l-6.81-.001 4.126-.73zM.868 12.69c0-.003 1.01-1.756 2.244-3.895l2.244-3.888 2.615-2.195A992.538 992.538 0 0110.594.514a.462.462 0 01-.042.106l-2.84 6.09-2.788 5.982-2.028.002c-1.115.002-2.028 0-2.028-.004z"
-                        fill="#0089D6"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0">
-                        <path
-                          fill="#fff"
-                          transform="translate(.867 .514)"
-                          d="M0 0h17.67v13.733H0z"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </div>
+                <div></div>
                 <span
-                  class="text-xs font-semibold capitalize font-success-700 pl-1"
-                  >strorage</span
+                  class="text-xs font-semibold capitalize text-gray-700 pl-1"
+                  >reservation</span
+                >
+              </div>
+              <span class="text-5xl text-success-700 mx-4"
+                ><svg
+                  class="w-3 h-3 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="6" cy="7" r="4" /></svg
+              ></span>
+              <span class="font-semibold text-gray-700">$43,281</span>
+            </div>
+            <!-- idle resources -->
+
+            <div
+              class="flex items-center justify-between flex-shrink-0 w-full px-8 pt-2"
+            >
+              <div class="flex items-center">
+                <span
+                  class="text-xs font-semibold capitalize text-gray-700 pl-1"
+                  >idle resources</span
                 >
               </div>
               <span class="text-5xl text-success-700"
@@ -991,67 +977,221 @@
                 >
                   <circle cx="6" cy="7" r="4" /></svg
               ></span>
-              <span class="font-semibold text-lg text-gray-800">$43,281</span>
-            </div>
-            <!-- gcp option -->
-
-            <div
-              class="flex items-center justify-between flex-shrink-0 w-full px-8 pt-2"
-            >
-              <div class="flex items-center">
-                <div>
-                  <svg
-                    width="18"
-                    height="15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0)">
-                      <path
-                        d="M12.217 4.73l1.484-1.483.099-.624C11.096.164 6.799.443 4.362 3.204a6.858 6.858 0 00-1.447 2.71l.531-.074 2.967-.49.23-.234c1.32-1.45 3.55-1.644 5.074-.411l.5.026z"
-                        fill="#EA4335"
-                      />
-                      <path
-                        d="M15.814 5.87A6.683 6.683 0 0013.8 2.624l-2.082 2.082a3.7 3.7 0 011.358 2.935v.37c1.024 0 1.853.83 1.853 1.853 0 1.024-.83 1.832-1.853 1.832H9.365L9 12.091v2.223l.365.348h3.711c2.662.021 4.837-2.1 4.858-4.761a4.82 4.82 0 00-2.12-4.03z"
-                        fill="#4285F4"
-                      />
-                      <path
-                        d="M5.658 14.663h3.707v-2.967H5.658a1.82 1.82 0 01-.76-.167l-.525.161-1.494 1.484-.13.505a4.81 4.81 0 002.91.984z"
-                        fill="#34A853"
-                      />
-                      <path
-                        d="M5.658 5.038a4.82 4.82 0 00-2.91 8.64l2.15-2.149A1.853 1.853 0 117.35 9.077l2.15-2.15a4.815 4.815 0 00-3.842-1.89z"
-                        fill="#FBBC05"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0">
-                        <path
-                          fill="#fff"
-                          transform="translate(.867 .943)"
-                          d="M0 0h17.067v13.733H0z"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </div>
-                <span
-                  class="text-xs font-semibold capitalize font-success-700 pl-1"
-                  >network</span
-                >
-              </div>
-              <span class="text-5xl text-success-700"
-                ><svg
-                  class="w-3 h-3 fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="6" cy="7" r="4" /></svg
-              ></span>
-              <span class="font-semibold text-lg text-gray-800">$1,221</span>
+              <span class="font-semibold text-gray-700">$1,221</span>
             </div>
           </div>
         </div>
-        <div>right</div>
+        <div>chart here</div>
+      </div>
+    </div>
+
+    <!-- assets overview -->
+    <div class="mt-8 bg-white py-4 pb-6 lg:mx-2 lg:border lg:border-gray-200">
+      <div class="flex justify-between w-full max-w-xs px-4 pt-4 lg:max-w-md">
+        <span
+          class="font-semibold text-gray-700 tracking-wide text-sm uppercase"
+          >assets overview</span
+        >
+        <!-- <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5 0a.5.5 0 01.5.5V2h1V.5a.5.5 0 011 0V2h1V.5a.5.5 0 011 0V2h1V.5a.5.5 0 011 0V2A2.5 2.5 0 0114 4.5h1.5a.5.5 0 010 1H14v1h1.5a.5.5 0 010 1H14v1h1.5a.5.5 0 010 1H14v1h1.5a.5.5 0 010 1H14a2.5 2.5 0 01-2.5 2.5v1.5a.5.5 0 01-1 0V14h-1v1.5a.5.5 0 01-1 0V14h-1v1.5a.5.5 0 01-1 0V14h-1v1.5a.5.5 0 01-1 0V14A2.5 2.5 0 012 11.5H.5a.5.5 0 010-1H2v-1H.5a.5.5 0 010-1H2v-1H.5a.5.5 0 010-1H2v-1H.5a.5.5 0 010-1H2A2.5 2.5 0 014.5 2V.5A.5.5 0 015 0zm-.5 3A1.5 1.5 0 003 4.5v7A1.5 1.5 0 004.5 13h7a1.5 1.5 0 001.5-1.5v-7A1.5 1.5 0 0011.5 3h-7zM5 6.5A1.5 1.5 0 016.5 5h3A1.5 1.5 0 0111 6.5v3A1.5 1.5 0 019.5 11h-3A1.5 1.5 0 015 9.5v-3zM6.5 6a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3z" fill="#486581"/></svg> -->
+        <div>
+          <svg class="w-5 h-5" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5 0a.5.5 0 01.5.5V2h1V.5a.5.5 0 011 0V2h1V.5a.5.5 0 011 0V2h1V.5a.5.5 0 011 0V2A2.5 2.5 0 0114 4.5h1.5a.5.5 0 010 1H14v1h1.5a.5.5 0 010 1H14v1h1.5a.5.5 0 010 1H14v1h1.5a.5.5 0 010 1H14a2.5 2.5 0 01-2.5 2.5v1.5a.5.5 0 01-1 0V14h-1v1.5a.5.5 0 01-1 0V14h-1v1.5a.5.5 0 01-1 0V14h-1v1.5a.5.5 0 01-1 0V14A2.5 2.5 0 012 11.5H.5a.5.5 0 010-1H2v-1H.5a.5.5 0 010-1H2v-1H.5a.5.5 0 010-1H2v-1H.5a.5.5 0 010-1H2A2.5 2.5 0 014.5 2V.5A.5.5 0 015 0zm-.5 3A1.5 1.5 0 003 4.5v7A1.5 1.5 0 004.5 13h7a1.5 1.5 0 001.5-1.5v-7A1.5 1.5 0 0011.5 3h-7zM5 6.5A1.5 1.5 0 016.5 5h3A1.5 1.5 0 0111 6.5v3A1.5 1.5 0 019.5 11h-3A1.5 1.5 0 015 9.5v-3zM6.5 6a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3z"
+              fill="#486581"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="flex flex-wrap w-full">
+        <div
+          class="pt-4 flex w-full flex-shrink-0 mx-4 justify-around  lg:w-2/5"
+        >
+          <!-- assets used card-->
+          <div class="flex flex-col max-w-xs rounded shadow items-center pt-4">
+            <div class="flex items-center">
+              <div class="pr-1">
+                <svg
+                  width="24"
+                  height="14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M7.366 5.062c0 .282.03.51.083.677.068.189.15.372.244.548a.33.33 0 01.053.175c0 .076-.046.152-.145.228l-.479.32a.365.365 0 01-.198.068c-.076 0-.152-.038-.228-.106a2.353 2.353 0 01-.274-.358 5.855 5.855 0 01-.236-.449c-.593.7-1.34 1.05-2.237 1.05-.639 0-1.149-.182-1.522-.548-.372-.365-.563-.852-.563-1.46 0-.647.229-1.172.693-1.568.464-.396 1.08-.593 1.864-.593.259 0 .525.022.806.06.282.039.571.1.875.168v-.556c0-.578-.121-.981-.357-1.217-.244-.236-.655-.35-1.24-.35-.267 0-.54.03-.822.099a6.049 6.049 0 00-.822.259 2.193 2.193 0 01-.266.099.464.464 0 01-.122.022c-.107 0-.16-.076-.16-.235v-.373c0-.122.016-.213.053-.267a.569.569 0 01.214-.16 4.38 4.38 0 01.958-.342A4.615 4.615 0 014.725.11c.906 0 1.568.205 1.994.616.418.41.631 1.035.631 1.872v2.465h.016zm-3.09 1.157c.251 0 .51-.046.784-.137.274-.092.518-.26.723-.487.122-.145.213-.305.259-.487a2.73 2.73 0 00.076-.662v-.32c-.231-.056-.465-.1-.7-.13a5.731 5.731 0 00-.716-.045c-.51 0-.882.099-1.133.304-.251.206-.373.495-.373.875 0 .358.091.624.281.807.183.19.45.282.8.282zm6.11.821c-.137 0-.228-.023-.289-.076-.06-.045-.114-.152-.16-.297L8.15.786A1.329 1.329 0 018.081.48c0-.121.06-.19.182-.19h.746c.145 0 .244.023.297.076.06.046.106.153.152.297l1.278 5.037L11.923.664c.038-.152.084-.251.145-.297a.525.525 0 01.304-.076h.609c.144 0 .243.023.304.076.061.046.114.153.145.297l1.202 5.098L15.948.664c.046-.152.1-.251.152-.297a.496.496 0 01.297-.076h.708c.122 0 .19.061.19.19 0 .039-.008.077-.015.122a1.084 1.084 0 01-.053.19l-1.834 5.882c-.046.152-.1.251-.16.297a.486.486 0 01-.29.076h-.653c-.145 0-.244-.023-.305-.076-.06-.053-.114-.152-.144-.305L12.66 1.76l-1.172 4.9c-.038.152-.083.25-.144.304-.061.053-.168.076-.304.076h-.655zm9.778.206c-.396 0-.792-.046-1.172-.137-.38-.092-.677-.19-.875-.305-.122-.068-.206-.144-.236-.213a.537.537 0 01-.046-.213V5.99c0-.16.061-.236.175-.236.047 0 .093.008.137.023.046.016.114.046.19.076.27.118.55.208.837.267.298.06.602.09.906.09.48 0 .852-.083 1.11-.25a.82.82 0 00.396-.723.741.741 0 00-.205-.533c-.137-.144-.396-.274-.768-.395l-1.104-.343c-.555-.175-.966-.433-1.217-.776a1.813 1.813 0 01-.38-1.103c0-.32.068-.601.205-.845.137-.243.32-.456.548-.624.228-.175.487-.304.791-.395.304-.091.624-.13.959-.13.167 0 .342.008.51.03.174.024.334.054.494.085.152.038.297.076.434.121.137.046.243.092.32.137a.66.66 0 01.228.19.41.41 0 01.068.252v.357c0 .16-.06.244-.175.244-.06 0-.16-.03-.289-.092a3.482 3.482 0 00-1.461-.296c-.434 0-.776.068-1.012.213-.236.144-.358.365-.358.677 0 .213.076.395.229.54.152.145.433.29.837.419l1.08.342c.548.175.944.418 1.18.73.235.312.35.67.35 1.066 0 .327-.069.624-.198.882-.137.259-.32.487-.556.67-.236.19-.517.327-.844.426-.343.106-.7.16-1.088.16z"
+                      fill="#252F3E"
+                    />
+                    <path
+                      d="M21.602 10.944c-2.504 1.849-6.14 2.83-9.268 2.83-4.383 0-8.332-1.62-11.314-4.314-.236-.213-.023-.502.258-.335 3.227 1.872 7.206 3.006 11.322 3.006 2.778 0 5.829-.579 8.636-1.766.419-.19.776.274.366.579zm1.042-1.187c-.32-.411-2.115-.198-2.93-.1-.243.031-.28-.182-.06-.342 1.43-1.004 3.781-.715 4.055-.38.274.342-.076 2.693-1.415 3.82-.205.175-.403.083-.312-.145.304-.753.982-2.45.662-2.853z"
+                      fill="#CB6E17"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <path
+                        fill="#fff"
+                        transform="translate(.867 .086)"
+                        d="M0 0h22.98v13.733H0z"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <span
+                class="text-gray-800 text-xs py-px2 px-2 bg-gray-lightest rounded-full uppercase font-semibold"
+                >cost saved last month</span
+              >
+            </div>
+            <!-- product list -->
+            <div class="flex">
+              <div>
+                <!-- product compute
+            compute option  -->
+                <div
+                  class="flex flex-col items-center justify-between flex-shrink-0 w-full px-8 pt-4"
+                >
+                  <div class="flex items-center">
+                    <span class="text-xs font-semibold capitalize text-gray-700"
+                      >compute</span
+                    >
+                  </div>
+                  <span class="font-semibold text-xl text-gray-700 pt-1"
+                    >32</span
+                  >
+                </div>
+                <!-- databases option -->
+                <div
+                  class="flex flex-col items-center justify-between flex-shrink-0 w-full px-8 pt-4"
+                >
+                  <div class="flex items-center">
+                    <span
+                      class="text-xs font-semibold capitalize text-gray-700 pl-1"
+                      >databases</span
+                    >
+                  </div>
+                  <span class="font-semibold text-gray-700 pt-1 text-xl"
+                    >16</span
+                  >
+                </div>
+              </div>
+
+              <div>
+                <!-- product compute
+            storage option -->
+                <div
+                  class="flex flex-col items-center justify-between flex-shrink-0 w-full px-8 pt-4"
+                >
+                  <div class="flex items-center">
+                    <span class="text-xs font-semibold capitalize text-gray-700"
+                      >storage</span
+                    >
+                  </div>
+                  <span class="font-semibold text-xl text-gray-700 pt-1"
+                    >66</span
+                  >
+                </div>
+                <!-- network option -->
+                <div
+                  class="flex flex-col items-center justify-between flex-shrink-0 w-full px-8 pt-4"
+                >
+                  <div class="flex items-center">
+                    <span
+                      class="text-xs font-semibold capitalize text-gray-700 pl-1"
+                      >network</span
+                    >
+                  </div>
+                  <span class="font-semibold text-gray-700 pt-1 text-xl"
+                    >19</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-lightest w-full py-2 mt-2 flex pr-4">
+              <span
+                class="text-gray-800 text-xs font-semibold
+              pb-1 border-b border-gray-500 ml-auto"
+              >
+                change service
+              </span>
+            </div>
+          </div>
+          <!-- cost card-->
+          <div class="flex flex-col max-w-xs rounded shadow items-center pt-4">
+            <div class="flex items-center">
+              <span
+                class="text-gray-800 text-xs py-px2 px-2 bg-gray-lightest rounded-full uppercase font-semibold items-center justify-center"
+                >assets used this month</span
+              >
+            </div>
+            <!-- product list -->
+            <div class="flex h-full items-center">
+              <div class="flex flex-col justify-around h-full">
+                <!-- product compute
+            compute option  -->
+                <div
+                  class="flex flex-col items-center justify-between flex-shrink-0 w-full px-8 pt-10"
+                >
+                  <div class="flex items-center">
+                    <span class="text-xs font-semibold capitalize text-gray-700"
+                      >compute</span
+                    >
+                  </div>
+                  <span class="font-semibold text-xl text-gray-700 pt-1"
+                    >302</span
+                  >
+                </div>
+                <!-- databases option -->
+                <div
+                  class="flex flex-col items-center justify-between flex-shrink-0 w-full px-8 pt-4"
+                >
+                  <div class="flex items-center">
+                    <span
+                      class="text-xs font-semibold capitalize text-gray-700 pl-1"
+                      >databases</span
+                    >
+                  </div>
+                  <span class="font-semibold text-gray-700 pt-1 text-xl"
+                    >106</span
+                  >
+                </div>
+              </div>
+
+              <div class="flex flex-col justify-around h-full">
+                <!-- product compute
+            storage option -->
+                <div
+                  class="flex flex-col items-center justify-between flex-shrink-0 w-full px-8 pt-10"
+                >
+                  <div class="flex items-center">
+                    <span class="text-xs font-semibold capitalize text-gray-700"
+                      >storage</span
+                    >
+                  </div>
+                  <span class="font-semibold text-xl text-gray-700 pt-1"
+                    >65</span
+                  >
+                </div>
+                <!-- network option -->
+                <div
+                  class="flex flex-col items-center justify-between flex-shrink-0 w-full px-8 pt-4"
+                >
+                  <div class="flex items-center">
+                    <span
+                      class="text-xs font-semibold capitalize text-gray-700 pl-1"
+                      >network</span
+                    >
+                  </div>
+                  <span class="font-semibold text-gray-700 pt-1 text-xl"
+                    >354</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>chart here</div>
       </div>
     </div>
   </div>
