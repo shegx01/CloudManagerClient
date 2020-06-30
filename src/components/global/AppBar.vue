@@ -12,8 +12,8 @@
         class="text-gray-600 pl-5 lg:pl-8 cursor-pointer focus:outline-none"
       >
         <svg
-          class="w-5 h-5 fill-current"
-          :class="[isNavOpen ? 'rotate-90' : '']"
+          class="w-5 h-5 fill-current transform"
+          :class="[isNavOpen ? '-rotate-90' : '']"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -37,19 +37,6 @@
               class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800 bg-gray-800 text-gray-lightest"
             >
               Dashboard
-              <div class="ml-2 text-current">
-                <svg
-                  class="w-4 h-4 fil-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
             </a>
             <a
               href="#"
@@ -304,7 +291,7 @@
             <img
               class="w-full h-full object-cover"
               src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=60&q=60"
-              alt="user profile"
+              alt="profile"
             />
           </div>
           <div
