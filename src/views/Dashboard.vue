@@ -59,7 +59,9 @@
           </div>
           <div class="flex w-full mt-4 p-4 bg-app-cardBg">
             <!-- chart -->
-            <div class="w-1/2">doughnut</div>
+            <div class="w-1/2">
+              <v-chart :options="options" autoresize />
+            </div>
             <!-- cards -->
             <div class="w-1/2 ">
               <div class="flex mb-4">
@@ -1203,6 +1205,68 @@ export default {
   name: 'Dashboard',
   components: {
     SecondaryBar
+  },
+  data() {
+    return {
+      options: {
+        tooltip: {
+          trigger: 'item',
+          backgroundColor: '#EFFCF6',
+          borderWidth: '1',
+          textStyle: {
+            color: '#0C6B58',
+            borderRadius: 3,
+            fontWeight: 'bold'
+          },
+          borderColor: '#8EEDC7',
+          formatter: '{a} <br/>{b} &bullet; {c}'
+        },
+        legend: {
+          orient: 'vertical',
+          left: 0,
+          itemHeight: 10,
+          itemWidth: 10,
+          textStyle: {
+            color: '#54677A',
+            fontWeight: 600,
+            padding: [4, 20, 0, 0],
+            borderRadius: 99
+          },
+          data: ['AWS', 'GCP', 'AZURE', 'ALIBABA', 'OCI', 'UNUSED']
+        },
+        series: [
+          {
+            name: 'cost overview',
+            type: 'pie',
+            radius: ['52%', '80%'],
+            avoidLabelOverlap: false,
+            label: {
+              show: false,
+              position: 'center'
+            },
+            emphasis: {
+              label: {
+                show: true,
+                fontSize: '16',
+                fontWeight: 'bold'
+              }
+            },
+            labelLine: {
+              show: false
+            },
+            data: [
+              { value: 28, name: 'AWS' },
+              { value: 18, name: 'GCP' },
+              { value: 2, name: 'AZURE' },
+              { value: 0, name: 'ALIBABA' },
+              { value: 0, name: 'OCI' },
+              { value: 70, name: 'UNUSED' }
+            ],
+            left: '35%'
+          }
+        ]
+      }
+    }
   }
 }
 </script>
@@ -1218,5 +1282,8 @@ export default {
 .labelMark {
   top: 0;
   right: 5px;
+}
+.echarts {
+  height: 168px !important;
 }
 </style>

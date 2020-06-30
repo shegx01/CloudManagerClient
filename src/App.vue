@@ -16,4 +16,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.echarts {
+  width: 100% !important;
+}
+</style>
