@@ -1079,31 +1079,31 @@
 
               <div>
                 <!-- product compute
-            compute option -->
+            storage option -->
                 <div
                   class="flex flex-col items-center justify-between flex-shrink-0 w-full px-8 pt-4"
                 >
                   <div class="flex items-center">
                     <span class="text-xs font-semibold capitalize text-gray-700"
-                      >compute</span
+                      >storage</span
                     >
                   </div>
                   <span class="font-semibold text-xl text-gray-700 pt-1"
-                    >32</span
+                    >66</span
                   >
                 </div>
-                <!-- databases option -->
+                <!-- network option -->
                 <div
                   class="flex flex-col items-center justify-between flex-shrink-0 w-full px-8 pt-4"
                 >
                   <div class="flex items-center">
                     <span
                       class="text-xs font-semibold capitalize text-gray-700 pl-1"
-                      >databases</span
+                      >network</span
                     >
                   </div>
                   <span class="font-semibold text-gray-700 pt-1 text-xl"
-                    >16</span
+                    >19</span
                   >
                 </div>
               </div>
@@ -1118,93 +1118,76 @@
             </div>
           </div>
           <!-- cost card-->
-
-          <div class="flex flex-col max-w-xs  rounded shadow items-center py-4">
-            <div class="flex items-center justify-between">
+          <div class="flex flex-col max-w-xs rounded shadow items-center pt-4">
+            <div class="flex items-center">
               <span
-                class="text-success-darkest text-xs py-px2 px-2 bg-success-lightest rounded-full uppercase font-semibold"
-                >cost based on tasks</span
+                class="text-gray-800 text-xs py-px2 px-2 bg-gray-lightest rounded-full uppercase font-semibold items-center justify-center"
+                >assets used this month</span
               >
-              <div class="text-gray-700 ml-2">
-                <svg
-                  class="fill-current w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.61 2.657a.49.49 0 01.49.49v9.81a.49.49 0 01-.981 0v-9.81a.49.49 0 01.49-.49z"
-                    fill="#334E68"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M5.919 10.648a.491.491 0 010 .694l-1.962 1.962a.491.491 0 01-.695 0L1.3 11.342a.491.491 0 01.695-.694l1.614 1.616 1.615-1.616a.491.491 0 01.695 0zm1.614-.634a.49.49 0 01.49-.49h2.944a.49.49 0 110 .98H8.024a.49.49 0 01-.49-.49zm0-2.943a.49.49 0 01.49-.49h4.905a.49.49 0 110 .98H8.024a.49.49 0 01-.49-.49zm0-2.942a.49.49 0 01.49-.49h6.867a.49.49 0 010 .98H8.024a.49.49 0 01-.49-.49zm0 8.828a.49.49 0 01.49-.49h.982a.49.49 0 010 .98h-.981a.49.49 0 01-.49-.49z"
-                    fill="#334E68"
-                  />
-                </svg>
-              </div>
             </div>
-            <!-- product type 
-            reschedling -->
-            <div
-              class="flex items-center justify-between flex-shrink-0 w-full px-8 pt-4"
-            >
-              <div class="flex items-center">
-                <span
-                  class="text-xs font-semibold capitalize text-gray-700 pl-1"
-                  >rescheduling</span
+            <!-- product list -->
+            <div class="flex h-full items-center">
+              <div class="flex flex-col justify-around h-full">
+                <!-- product compute
+            compute option  -->
+                <div
+                  class="flex flex-col items-center justify-between flex-shrink-0 w-full px-8 pt-10"
                 >
+                  <div class="flex items-center">
+                    <span class="text-xs font-semibold capitalize text-gray-700"
+                      >compute</span
+                    >
+                  </div>
+                  <span class="font-semibold text-xl text-gray-700 pt-1"
+                    >302</span
+                  >
+                </div>
+                <!-- databases option -->
+                <div
+                  class="flex flex-col items-center justify-between flex-shrink-0 w-full px-8 pt-4"
+                >
+                  <div class="flex items-center">
+                    <span
+                      class="text-xs font-semibold capitalize text-gray-700 pl-1"
+                      >databases</span
+                    >
+                  </div>
+                  <span class="font-semibold text-gray-700 pt-1 text-xl"
+                    >106</span
+                  >
+                </div>
               </div>
-              <span class="text-5xl text-success-700"
-                ><svg
-                  class="w-3 h-3 fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="7" cy="6" r="4" /></svg
-              ></span>
-              <span class="font-semibold text-gray-700">$6,934</span>
-            </div>
-            <!-- reservation -->
 
-            <div
-              class="flex items-center justify-between flex-shrink-0 w-full px-8 pt-2"
-            >
-              <div class="flex items-center">
-                <div></div>
-                <span
-                  class="text-xs font-semibold capitalize text-gray-700 pl-1"
-                  >reservation</span
+              <div class="flex flex-col justify-around h-full">
+                <!-- product compute
+            storage option -->
+                <div
+                  class="flex flex-col items-center justify-between flex-shrink-0 w-full px-8 pt-10"
                 >
+                  <div class="flex items-center">
+                    <span class="text-xs font-semibold capitalize text-gray-700"
+                      >storage</span
+                    >
+                  </div>
+                  <span class="font-semibold text-xl text-gray-700 pt-1"
+                    >65</span
+                  >
+                </div>
+                <!-- network option -->
+                <div
+                  class="flex flex-col items-center justify-between flex-shrink-0 w-full px-8 pt-4"
+                >
+                  <div class="flex items-center">
+                    <span
+                      class="text-xs font-semibold capitalize text-gray-700 pl-1"
+                      >network</span
+                    >
+                  </div>
+                  <span class="font-semibold text-gray-700 pt-1 text-xl"
+                    >354</span
+                  >
+                </div>
               </div>
-              <span class="text-5xl text-success-700 mx-4"
-                ><svg
-                  class="w-3 h-3 fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="6" cy="7" r="4" /></svg
-              ></span>
-              <span class="font-semibold text-gray-700">$43,281</span>
-            </div>
-            <!-- idle resources -->
-
-            <div
-              class="flex items-center justify-between flex-shrink-0 w-full px-8 pt-2"
-            >
-              <div class="flex items-center">
-                <span
-                  class="text-xs font-semibold capitalize text-gray-700 pl-1"
-                  >idle resources</span
-                >
-              </div>
-              <span class="text-5xl text-success-700"
-                ><svg
-                  class="w-3 h-3 fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="6" cy="7" r="4" /></svg
-              ></span>
-              <span class="font-semibold text-gray-700">$1,221</span>
             </div>
           </div>
         </div>

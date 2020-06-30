@@ -275,7 +275,7 @@
         </svg>
       </div>
       <!-- user control -->
-      <div class="ml-4 block flex items-center">
+      <div class="ml-4 flex items-center">
         <div class="hidden lg:flex flex-col mr-4">
           <span
             class="text-xs capitalize text-gray-lightest font-semibold tracking-wide whitespace-no-wrap"
