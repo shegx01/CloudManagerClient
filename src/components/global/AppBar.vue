@@ -1,7 +1,11 @@
 <template>
   <div class="bg-gray-darkest py-0 px-4 h-16 flex items-center relative">
     <!-- App logo here -->
-    <a class="font-bold text-gray-lightest text-xl capitalize pr-4" href="#">
+    <a
+      @click="handleDashboardNav"
+      class="font-bold text-gray-lightest text-xl capitalize pr-4"
+      href="#"
+    >
       cloud manager
     </a>
     <!-- Navigation Menu -->
@@ -30,10 +34,10 @@
         <div class=" flex flex-col text-sm items-center">
           <!-- instance one -->
           <div
-            class="pt-3 flex justify-between w-full text-gray-800 bg-white capitalize"
+            class="pt-3 flex justify-between w-full text-gray-800 bg-white capitalize cursor-pointer"
           >
             <a
-              href="#"
+              @click="handleDashboardNav"
               class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800 bg-gray-800 text-gray-lightest"
             >
               Dashboard
@@ -63,6 +67,7 @@
             class="pt-3 flex justify-between w-full text-gray-800 bg-white capitalize"
           >
             <a
+              @click="handleNavigation"
               href="#"
               class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800"
             >
@@ -356,6 +361,18 @@ export default {
     },
     toggleNavOpen() {
       this.isNavOpen = !this.isNavOpen
+    },
+    handleNavigation(_evt) {
+      this.$router.push({
+        name: 'CostManagement'
+      })
+      this.isNavOpen = false
+    },
+    handleDashboardNav(_evt) {
+      this.$router.push({
+        name: 'Dashboard'
+      })
+      this.isNavOpen = false
     }
   }
 }
