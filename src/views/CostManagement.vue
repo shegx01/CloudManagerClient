@@ -51,7 +51,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-wrap w-full lg:flex-no-wrap lg:mt-16 lg:h-64">
+      <div class="flex flex-wrap w-full lg:flex-no-wrap lg:mt-16 lg:h-full">
         <div
           class="pt-4 flex w-full flex-shrink-0 px-4 justify-around  lg:w-4/12 lg:flex-col lg:items-center"
         >
@@ -133,6 +133,87 @@
         </div>
         <div class="flex lg:order-first lg:w-8/12 w-full mt-12 lg:mt-0">
           <v-chart :options="options" autoresize />
+        </div>
+      </div>
+    </div>
+    <!-- consumed product -->
+
+    <div class="mt-8 bg-white py-4 pb-6 lg:px-2 lg:border lg:border-gray-200">
+      <div class="flex items-center justify-center lg:justify-start">
+        <div class="flex justify-between w-full max-w-xs px-4 pt-4 lg:max-w-md">
+          <span
+            class="font-semibold text-gray-700 tracking-wide text-sm uppercase"
+            >services used this month</span
+          >
+          <a class="text-gray-800 cursor-pointer">
+            <svg
+              class="w-5 h-5 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              style="-ms-transform:rotate(360deg);-webkit-transform:rotate(360deg)"
+              viewBox="0 0 16 16"
+              transform="rotate(360)"
+            >
+              <g fill="#626262" fill-rule="evenodd">
+                <path
+                  d="M3 13a.5.5 0 00.5-.5v-10a.5.5 0 00-1 0v10a.5.5 0 00.5.5z"
+                />
+                <path
+                  d="M5.354 4.854a.5.5 0 000-.708l-2-2a.5.5 0 00-.708 0l-2 2a.5.5 0 10.708.708L3 3.207l1.646 1.647a.5.5 0 00.708 0zM7 9.5a.5.5 0 01.5-.5h3a.5.5 0 010 1h-3a.5.5 0 01-.5-.5zm0-3a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5zm0-3a.5.5 0 01.5-.5h7a.5.5 0 010 1h-7a.5.5 0 01-.5-.5zm0 9a.5.5 0 01.5-.5h1a.5.5 0 010 1h-1a.5.5 0 01-.5-.5z"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-wrap w-full">
+        <div
+          class="pt-4 flex w-full flex-shrink-0 px-4 justify-around  lg:w-2/5 lg:mt-4"
+        >
+          <!-- empty on desktop -->
+        </div>
+        <div class="flex w-full lg:w-3/5 px-6 pt-12 lg:pt-0 lg:px-0 lg:pl-4">
+          <div class="shadow-md flex w-full rounded">
+            <el-table
+              :data="tableData"
+              stripe
+              :border="false"
+              style="width: 100%"
+            >
+              <el-table-column prop="service" label="SERVICE" width="">
+              </el-table-column>
+              <el-table-column
+                prop="amountSpent"
+                label="AMOUNT SPENT"
+                width=""
+                align="right"
+              >
+              </el-table-column>
+              <el-table-column label="USAGE" width="" align="center">
+                <template slot-scope="scope">
+                  <div>
+                    <span
+                      :class="[
+                        scope.row.usage === 'high'
+                          ? 'text-warning-darkest uppercase'
+                          : 'uppercase'
+                      ]"
+                      >{{ scope.row.usage }}</span
+                    >
+                  </div>
+                </template>
+              </el-table-column>
+              <el-table-column label="" align="center">
+                <template slot-scope="scope">
+                  <div>
+                    <a :href="scope.row.link" class="text-success-800"
+                      >view all</a
+                    >
+                  </div>
+                </template>
+              </el-table-column>
+            </el-table>
+          </div>
         </div>
       </div>
     </div>
@@ -321,7 +402,58 @@ export default {
             data: [1000, 2032, 901, 1034, 500, 1330, 1320]
           }
         ]
-      }
+      },
+
+      tableData: [
+        {
+          service: 'AWS cloudFront',
+          amountSpent: '$3,231',
+          usage: 'normal',
+          link: '/#'
+        },
+        {
+          service: 'AWS redShift',
+          amountSpent: '$6,231',
+          usage: 'high',
+          link: '/#'
+        },
+        {
+          service: 'AWS SQS',
+          amountSpent: '$2,231',
+          usage: 'normal',
+          link: '/#'
+        },
+        {
+          service: 'AWS RDS',
+          amountSpent: '$1,231',
+          usage: 'normal',
+          link: '/#'
+        },
+        {
+          service: 'AWS SNS',
+          amountSpent: '$931',
+          usage: 'normal',
+          link: '/#'
+        },
+        {
+          service: 'AWS elasticSearch',
+          amountSpent: '$2,231',
+          usage: 'normal',
+          link: '/#'
+        },
+        {
+          service: 'AWS RDS',
+          amountSpent: '$4,231',
+          usage: 'high',
+          link: '/#'
+        },
+        {
+          service: 'AWS RDS',
+          amountSpent: '$5,231',
+          usage: 'high',
+          link: '/#'
+        }
+      ]
     }
   }
 }

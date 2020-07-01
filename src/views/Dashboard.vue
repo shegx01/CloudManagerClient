@@ -1212,15 +1212,35 @@
               :border="false"
               style="width: 100%"
             >
-              <el-table-column prop="compute" label="COMPUTE" width="">
+              <el-table-column
+                prop="compute"
+                label="COMPUTE"
+                width=""
+                align="center"
+              >
               </el-table-column>
-              <el-table-column prop="database" label="DATABASE" width="">
+              <el-table-column
+                prop="database"
+                label="DATABASE"
+                width=""
+                align="center"
+              >
               </el-table-column>
-              <el-table-column prop="network" label="NETWORK" width="">
+              <el-table-column
+                prop="network"
+                label="NETWORK"
+                width=""
+                align="center"
+              >
               </el-table-column>
-              <el-table-column prop="analytics" label="ANALYTICS" width="">
+              <el-table-column
+                prop="analytics"
+                label="ANALYTICS"
+                width=""
+                align="center"
+              >
               </el-table-column>
-              <el-table-column prop="storage" label="STORAGE">
+              <el-table-column prop="storage" label="STORAGE" align="center">
               </el-table-column>
             </el-table>
           </div>
