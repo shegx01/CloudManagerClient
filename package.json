@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "echarts": "^4.8.0",
+    "element-ui": "^2.13.2",
     "google-fonts-webpack-plugin": "^0.4.4",
     "tailwindcss": "^1.4.6",
     "vue": "^2.6.11",

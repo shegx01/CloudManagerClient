@@ -20,4 +20,16 @@ export default {
 .echarts {
   width: 100% !important;
 }
+.el-table td {
+  border-bottom: unset !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  text-align: center !important;
+  color: #486581;
+  font-weight: semibold;
+}
+.el-table th {
+  text-align: center !important;
+  color: #486581;
+}
 </style>

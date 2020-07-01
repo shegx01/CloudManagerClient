@@ -6,7 +6,7 @@
     <div class="flex flex-wrap lg:flex-no-wrap mt-16">
       <!-- cost overview  -->
       <div class=" bg-white flex flex-shrink-0 w-4/6 lg:w-2/6 lg:mx-2 ">
-        <div class="rounded-sm bg-app-cardBg-100 w-full lg:shadow-lg">
+        <div class="rounded-lg bg-app-cardBg-100 w-full lg:shadow-lg">
           <div class="flex justify-between w-full px-4 pt-4">
             <span
               class="font-semibold text-gray-700 tracking-wide text-sm uppercase"
@@ -60,7 +60,7 @@
           <div class="flex w-full mt-4 p-4 bg-app-cardBg">
             <!-- chart -->
             <div class="w-1/2">
-              <v-chart :options="options" autoresize />
+              <v-chart :options="overviewOptions" autoresize />
             </div>
             <!-- cards -->
             <div class="w-1/2 ">
@@ -736,7 +736,9 @@
           class="pt-4 flex w-full flex-shrink-0 px-4 justify-around  lg:w-2/5"
         >
           <!-- expenses card-->
-          <div class="flex flex-col max-w-xs rounded shadow items-center py-4">
+          <div
+            class="flex flex-col max-w-xs rounded shadow-xs items-center py-4"
+          >
             <div>
               <span
                 class="text-success-darkest text-xs py-px2 px-2 bg-success-lightest rounded-full uppercase font-semibold"
@@ -894,7 +896,9 @@
           </div>
           <!-- cost card-->
 
-          <div class="flex flex-col max-w-xs  rounded shadow items-center py-4">
+          <div
+            class="flex flex-col max-w-xs  rounded shadow-xs items-center py-4 ml-2"
+          >
             <div class="flex items-center justify-between">
               <span
                 class="text-success-darkest text-xs py-px2 px-2 bg-success-lightest rounded-full uppercase font-semibold"
@@ -983,7 +987,10 @@
             </div>
           </div>
         </div>
-        <div>chart here</div>
+        <!-- optimisation graph -->
+        <div class="flex w-full h-48 ml-3 mt-16 lg:w-3/5 lg:ml-0 lg:mt-0">
+          <v-chart :options="optimisationOptions" autoresize />
+        </div>
       </div>
     </div>
 
@@ -1008,10 +1015,12 @@
       </div>
       <div class="flex flex-wrap w-full">
         <div
-          class="pt-4 flex w-full flex-shrink-0 px-4 justify-around  lg:w-2/5"
+          class="pt-4 flex w-full flex-shrink-0 px-4 justify-around  lg:w-2/5 lg:mt-4"
         >
           <!-- assets used card-->
-          <div class="flex flex-col max-w-xs rounded shadow items-center pt-4">
+          <div
+            class="flex flex-col max-w-xs rounded shadow-xs items-center pt-4 h-64"
+          >
             <div class="flex items-center">
               <div class="pr-1">
                 <svg
@@ -1110,17 +1119,19 @@
                 </div>
               </div>
             </div>
-            <div class="bg-gray-lightest w-full py-2 mt-2 flex pr-4">
+            <div class="bg-gray-lightest w-full py-2 flex pr-4 mt-auto">
               <span
                 class="text-gray-800 text-xs font-semibold
-              pb-1 border-b border-gray-500 ml-auto"
+              pb-1 border-b border-gray-300 ml-auto"
               >
                 change service
               </span>
             </div>
           </div>
           <!-- cost card-->
-          <div class="flex flex-col max-w-xs rounded shadow items-center pt-4">
+          <div
+            class="flex flex-col max-w-xs rounded shadow-xs items-center pt-4 h-64 ml-2"
+          >
             <div class="flex items-center">
               <span
                 class="text-gray-800 text-xs py-px2 px-2 bg-gray-lightest rounded-full uppercase font-semibold items-center justify-center"
@@ -1193,7 +1204,27 @@
             </div>
           </div>
         </div>
-        <div>chart here</div>
+        <div class="flex w-full lg:w-3/5 px-6 pt-12 lg:pt-0 lg:px-0 lg:pl-4">
+          <div class="shadow-md flex w-full rounded">
+            <el-table
+              :data="tableData"
+              stripe
+              :border="false"
+              style="width: 100%"
+            >
+              <el-table-column prop="compute" label="COMPUTE" width="">
+              </el-table-column>
+              <el-table-column prop="database" label="DATABASE" width="">
+              </el-table-column>
+              <el-table-column prop="network" label="NETWORK" width="">
+              </el-table-column>
+              <el-table-column prop="analytics" label="ANALYTICS" width="">
+              </el-table-column>
+              <el-table-column prop="storage" label="STORAGE">
+              </el-table-column>
+            </el-table>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1208,7 +1239,7 @@ export default {
   },
   data() {
     return {
-      options: {
+      overviewOptions: {
         tooltip: {
           trigger: 'item',
           backgroundColor: '#EFFCF6',
@@ -1216,7 +1247,7 @@ export default {
           textStyle: {
             color: '#0C6B58',
             borderRadius: 3,
-            fontWeight: 'semibold'
+            fontWeight: 'normal'
           },
           borderColor: '#8EEDC7',
           formatter: '{a} <br/>{b} &bullet; {c}'
@@ -1265,7 +1296,161 @@ export default {
             left: '35%'
           }
         ]
-      }
+      },
+      optimisationOptions: {
+        legend: {
+          textStyle: {
+            color: '#54677A',
+            fontWeight: 600,
+            padding: [0, 22, 0, 0],
+            top: '0'
+          },
+          orient: 'vertical',
+          top: '20%',
+          left: '0'
+        },
+        tooltip: {
+          backgroundColor: '#EFFCF6',
+          borderWidth: '1',
+          textStyle: {
+            color: '#0C6B58',
+            borderRadius: 3,
+            fontWeight: 'normal'
+          },
+          borderColor: '#8EEDC7'
+        },
+        dataset: {
+          dimensions: [
+            'services',
+            'AWS',
+            'GCP',
+            'AZURE',
+            'IBM',
+            'OCI',
+            'ALIBABA'
+          ],
+          source: [
+            {
+              services: 'SCHEDULING',
+              AWS: 1123,
+              GCP: 435,
+              AZURE: 845,
+              IBM: 943,
+              OCI: 1232,
+              ALIBABA: 793
+            },
+            {
+              services: 'RIGHT SIZING',
+              AWS: 1020,
+              GCP: 465,
+              AZURE: 645,
+              IBM: 473,
+              OCI: 872,
+              ALIBABA: 432
+            },
+            {
+              services: 'RESERVATION',
+              AWS: 1620,
+              GCP: 765,
+              AZURE: 545,
+              IBM: 433,
+              OCI: 972,
+              ALIBABA: 432
+            },
+            {
+              services: 'IDLE RESOURCES',
+              AWS: 1620,
+              GCP: 865,
+              AZURE: 745,
+              IBM: 573,
+              OCI: 972,
+              ALIBABA: 632
+            }
+          ]
+        },
+        xAxis: {
+          type: 'category',
+          axisLine: {
+            lineStyle: {
+              color: 'rgba(111, 127, 144, 1)'
+            }
+          },
+          axisLabel: {
+            fontWeight: 700
+          }
+        },
+        yAxis: {
+          axisLine: {
+            lineStyle: {
+              color: 'rgba(111, 127, 144, 1)'
+            }
+          },
+          axisLabel: {
+            fontWeight: 700
+          }
+        },
+        grid: {
+          right: '4%',
+          top: '4%',
+          left: '14%',
+          bottom: '0',
+          containLabel: true
+        },
+        // Declare several bar series, each will be mapped
+        // to a column of dataset.source by default.
+        series: [
+          { type: 'bar' },
+          { type: 'bar' },
+          { type: 'bar' },
+          { type: 'bar' },
+          { type: 'bar' },
+          { type: 'bar' }
+        ]
+      },
+      tableData: [
+        {
+          compute: 23,
+          database: 32,
+          network: 43,
+          analytics: 43,
+          storage: 50
+        },
+        {
+          compute: 90,
+          database: 12,
+          network: 43,
+          analytics: 60,
+          storage: 50
+        },
+        {
+          compute: 33,
+          database: 12,
+          network: 13,
+          analytics: 43,
+          storage: 70
+        },
+        {
+          compute: 43,
+          database: 32,
+          network: 13,
+          analytics: 73,
+          storage: 10
+        },
+        {
+          compute: 23,
+          database: 12,
+          network: 23,
+          analytics: 73,
+          storage: 20
+        },
+        {
+          compute: 13,
+          database: 2,
+          network: 13,
+          analytics: 21,
+          storage: 22
+        }
+      ]
     }
   }
 }
@@ -1284,6 +1469,7 @@ export default {
   right: 5px;
 }
 .echarts {
-  height: 168px !important;
+  height: 100% !important;
+  min-height: 168px;
 }
 </style>

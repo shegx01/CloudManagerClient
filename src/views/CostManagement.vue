@@ -23,16 +23,16 @@
             >
             <div>
               <span
-                class="font-semibold text-gray-700  text-xs border-b pb-px2 border-gray-700"
+                class="font-semibold text-gray-700  text-xs border-b pb-px2 border-gray-300"
                 >change</span
               >
             </div>
           </div>
           <div
-            class="px-4 py-1 rounded flex items-center font-semibold bg-gray-lightest tracking-wider"
+            class="px-4 py-2  flex items-center font-semibold bg-gray-200 rounded-sm tracking-wider"
           >
             <span
-              class="text-xs font-semibold tracking-wider text-gray-800 uppercase"
+              class="text-xs font-semibold tracking-wider text-gray-700 uppercase"
               >services</span
             >
             <div class="ml-4">
@@ -57,7 +57,7 @@
         >
           <!-- monthly spend card-->
           <div
-            class="flex flex-col max-w-lg rounded shadow items-center pt-4 lg:max-w-sm lg:shadow-lg"
+            class="flex flex-col max-w-lg rounded shadow-xs items-center pt-4 lg:max-w-sm"
           >
             <div class="flex w-full ml-6">
               <span
@@ -95,7 +95,7 @@
           <!-- highest spent card card-->
 
           <div
-            class="flex flex-col max-w-lg rounded shadow items-center pt-4 lg:max-w-sm lg:mt-10 lg:shadow-lg"
+            class="flex flex-col max-w-lg rounded shadow-xs items-center pt-4 lg:max-w-sm lg:mt-10"
           >
             <div class="flex w-full ml-6">
               <span
@@ -163,7 +163,7 @@ export default {
           textStyle: {
             color: '#0C6B58',
             borderRadius: 3,
-            fontWeight: 'semibold'
+            fontWeight: 'normal'
           },
           borderColor: '#8EEDC7'
         },
@@ -203,7 +203,7 @@ export default {
             }
           },
           axisLabel: {
-            fontWeight: 500
+            fontWeight: 700
           }
         },
         yAxis: {
@@ -216,7 +216,7 @@ export default {
             }
           },
           axisLabel: {
-            fontWeight: 500
+            fontWeight: 700
           }
         },
         series: [
