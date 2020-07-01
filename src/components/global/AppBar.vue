@@ -10,7 +10,7 @@
     </a>
     <!-- Navigation Menu -->
     <div class="flex items-center px-4 border-l border-r border-gray-900">
-      <span class="font-bold capitalize text-gray-600 text-xl">Dashboard</span>
+      <span class="font-bold capitalize text-gray-600 text-lg">Dashboard</span>
       <button
         @click="toggleNavOpen"
         class="text-gray-600 pl-5 lg:pl-8 cursor-pointer focus:outline-none"

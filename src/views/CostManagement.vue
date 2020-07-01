@@ -11,10 +11,10 @@
       >
         <div
           class="flex justify-between w-full max-w-lg py-4 lg:max-w-lg lg:ml-auto
-           items-center"
+          "
         >
           <div
-            class="font-semibold text-gray-700  text-xs capitalize whitespace-no-wrap flex"
+            class="font-semibold text-gray-700  text-xs capitalize whitespace-no-wrap flex  items-center"
           >
             currently viewing as
             <span
