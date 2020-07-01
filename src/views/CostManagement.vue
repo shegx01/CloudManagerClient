@@ -6,44 +6,54 @@
     <div
       class="mt-20 bg-white py-4 pb-6 lg:mx-2 lg:border lg:border-gray-200 lg:bg-transparent lg:border-none"
     >
-      <div class="flex justify-between w-full max-w-lg px-4 py-4 lg:max-w-lg">
+      <div
+        class="flex w-full ml-6 lg:ml-0 lg:bg-app-cardBg lg:pr-6 lg:py-2 rounded lg:shadow-xs lg:mb-24"
+      >
         <div
-          class="font-semibold text-gray-700  text-xs capitalize whitespace-no-wrap flex"
+          class="flex justify-between w-full max-w-lg py-4 lg:max-w-lg lg:ml-auto
+           items-center"
         >
-          currently viewing as
-          <span
-            class="px-2 text-sm font-bold uppercase tracking-wide text-gray-800"
-            >monthly</span
+          <div
+            class="font-semibold text-gray-700  text-xs capitalize whitespace-no-wrap flex"
           >
-          <div>
+            currently viewing as
             <span
-              class="font-semibold text-gray-700  text-xs border-b pb-px2 border-gray-700"
-              >change</span
+              class="px-2 text-sm font-bold uppercase tracking-wide text-gray-800"
+              >monthly</span
             >
+            <div>
+              <span
+                class="font-semibold text-gray-700  text-xs border-b pb-px2 border-gray-700"
+                >change</span
+              >
+            </div>
           </div>
-        </div>
-        <div
-          class="px-4 py-1 rounded flex items-center font-semibold bg-gray-lightest tracking-wider"
-        >
-          <span
-            class="text-xs font-semibold tracking-wider text-gray-800 uppercase"
-            >services</span
+          <div
+            class="px-4 py-1 rounded flex items-center font-semibold bg-gray-lightest tracking-wider"
           >
-          <div class="ml-4">
-            <svg class="w-4 h-4 fil-current" xmlns="http://www.w3.org/2000/svg">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
-                fill="#486581"
-              />
-            </svg>
+            <span
+              class="text-xs font-semibold tracking-wider text-gray-800 uppercase"
+              >services</span
+            >
+            <div class="ml-4">
+              <svg
+                class="w-4 h-4 fil-current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
+                  fill="#486581"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
-      <div class="flex flex-wrap w-full lg:flex-no-wrap ">
+      <div class="flex flex-wrap w-full lg:flex-no-wrap lg:mt-16 lg:h-64">
         <div
-          class="pt-4 flex w-full flex-shrink-0 mx-4 justify-around  lg:w-4/12 lg:flex-col lg:items-center"
+          class="pt-4 flex w-full flex-shrink-0 px-4 justify-around  lg:w-4/12 lg:flex-col lg:items-center"
         >
           <!-- monthly spend card-->
           <div
@@ -121,7 +131,9 @@
             </div>
           </div>
         </div>
-        <div class="flex lg:order-first lg:w-8/12">chart here</div>
+        <div class="flex lg:order-first lg:w-8/12 w-full mt-12 lg:mt-0">
+          <v-chart :options="options" autoresize />
+        </div>
       </div>
     </div>
   </div>
@@ -136,8 +148,187 @@ export default {
   },
   data() {
     return {
-      currentDir: 'cost management'
+      currentDir: 'cost management',
+      options: {
+        tooltip: {
+          trigger: 'axis',
+          axisPointer: {
+            type: 'shadow',
+            shadowStyle: {
+              color: 'rgba(0, 90, 109, .1)'
+            }
+          },
+          backgroundColor: '#EFFCF6',
+          borderWidth: '1',
+          textStyle: {
+            color: '#0C6B58',
+            borderRadius: 3,
+            fontWeight: 'semibold'
+          },
+          borderColor: '#8EEDC7'
+        },
+        legend: {
+          data: [
+            'AWS lambda',
+            'AWS glacier',
+            'AWS sns',
+            'AWS cloudFront',
+            'AWS EBS',
+            'AWS SQS',
+            'AWS RDS',
+            'AWS elasticCache',
+            'AWS RedShift',
+            'AWS kinesis'
+          ],
+          textStyle: {
+            color: '#54677A',
+            fontWeight: 600,
+            padding: [0, 22, 0, 0]
+          },
+          bottom: '0',
+          left: '4%'
+        },
+        grid: {
+          left: '4%',
+          right: '4%',
+          top: '0',
+          bottom: '22%',
+          containLabel: true
+        },
+        xAxis: {
+          type: 'value',
+          axisLine: {
+            lineStyle: {
+              color: 'rgba(111, 127, 144, 1)'
+            }
+          },
+          axisLabel: {
+            fontWeight: 500
+          }
+        },
+        yAxis: {
+          type: 'category',
+          data: ['JUNE 2019', 'JULY 2019', 'AUG 2019', 'SEPT 2019', 'OCT 2019'],
+
+          axisLine: {
+            lineStyle: {
+              color: 'rgba(111, 127, 144, 1)'
+            }
+          },
+          axisLabel: {
+            fontWeight: 500
+          }
+        },
+        series: [
+          {
+            name: 'AWS lambda',
+            type: 'bar',
+            stack: 'total',
+            label: {
+              show: true,
+              position: 'insideRight'
+            },
+            data: [1220, 867, 2324, 621, 390, 1330, 920]
+          },
+          {
+            name: 'AWS glacier',
+            type: 'bar',
+            stack: 'total',
+            label: {
+              show: true,
+              position: 'insideRight'
+            },
+            data: [1020, 192, 801, 104, 990, 130, 321]
+          },
+          {
+            name: 'AWS sns',
+            type: 'bar',
+            stack: 'total',
+            label: {
+              show: true,
+              position: 'insideRight'
+            },
+            data: [820, 382, 891, 294, 490, 600, 900]
+          },
+          {
+            name: 'AWS cloudFront',
+            type: 'bar',
+            stack: 'total',
+            label: {
+              show: true,
+              position: 'insideRight'
+            },
+            data: [150, 212, 201, 154, 190, 330, 410]
+          },
+          {
+            name: 'AWS EBS',
+            type: 'bar',
+            stack: 'total',
+            label: {
+              show: true,
+              position: 'insideRight'
+            },
+            data: [820, 832, 901, 934, 1290, 1330, 1320]
+          },
+          {
+            name: 'AWS SQS',
+            type: 'bar',
+            stack: 'total',
+            label: {
+              show: true,
+              position: 'insideRight'
+            },
+            data: [900, 1032, 901, 334, 190, 1330, 1320]
+          },
+          {
+            name: 'AWS RDS',
+            type: 'bar',
+            stack: 'total',
+            label: {
+              show: true,
+              position: 'insideRight'
+            },
+            data: [1400, 122, 901, 1034, 190, 130, 920]
+          },
+          {
+            name: 'AWS elasticCache',
+            type: 'bar',
+            stack: 'total',
+            label: {
+              show: true,
+              position: 'insideRight'
+            },
+            data: [1000, 1032, 901, 734, 490, 730, 820]
+          },
+          {
+            name: 'AWS RedShift',
+            type: 'bar',
+            stack: 'total',
+            label: {
+              show: true,
+              position: 'insideRight'
+            },
+            data: [960, 1032, 901, 734, 990, 1930, 120]
+          },
+          {
+            name: 'AWS kinesis',
+            type: 'bar',
+            stack: 'total',
+            label: {
+              show: true,
+              position: 'insideRight'
+            },
+            data: [1000, 2032, 901, 1034, 500, 1330, 1320]
+          }
+        ]
+      }
     }
   }
 }
 </script>
+
+<style lang="css">
+/* .echarts {
+  width: 100% !important;
+} */
+</style>

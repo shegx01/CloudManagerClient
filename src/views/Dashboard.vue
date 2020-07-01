@@ -733,7 +733,7 @@
       </div>
       <div class="flex flex-wrap w-full">
         <div
-          class="pt-4 flex w-full flex-shrink-0 mx-4 justify-around  lg:w-2/5"
+          class="pt-4 flex w-full flex-shrink-0 px-4 justify-around  lg:w-2/5"
         >
           <!-- expenses card-->
           <div class="flex flex-col max-w-xs rounded shadow items-center py-4">
@@ -988,7 +988,7 @@
     </div>
 
     <!-- assets overview -->
-    <div class="mt-8 bg-white py-4 pb-6 lg:mx-2 lg:border lg:border-gray-200">
+    <div class="mt-8 bg-white py-4 pb-6 lg:px-2 lg:border lg:border-gray-200">
       <div class="flex justify-between w-full max-w-xs px-4 pt-4 lg:max-w-md">
         <span
           class="font-semibold text-gray-700 tracking-wide text-sm uppercase"
@@ -1008,7 +1008,7 @@
       </div>
       <div class="flex flex-wrap w-full">
         <div
-          class="pt-4 flex w-full flex-shrink-0 mx-4 justify-around  lg:w-2/5"
+          class="pt-4 flex w-full flex-shrink-0 px-4 justify-around  lg:w-2/5"
         >
           <!-- assets used card-->
           <div class="flex flex-col max-w-xs rounded shadow items-center pt-4">
@@ -1216,7 +1216,7 @@ export default {
           textStyle: {
             color: '#0C6B58',
             borderRadius: 3,
-            fontWeight: 'bold'
+            fontWeight: 'semibold'
           },
           borderColor: '#8EEDC7',
           formatter: '{a} <br/>{b} &bullet; {c}'
