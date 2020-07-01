@@ -1,5 +1,5 @@
 <template>
-  <div class="antialiased bg-app-background pb-56">
+  <div class="antialiased bg-app-background">
     <div id="nav">
       <AppBar />
     </div>
@@ -19,5 +19,17 @@ export default {
 <style>
 .echarts {
   width: 100% !important;
+}
+.el-table td {
+  border-bottom: unset !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  text-align: center;
+  color: #486581;
+  font-weight: semibold;
+}
+.el-table th {
+  text-align: center;
+  color: #486581;
 }
 </style>

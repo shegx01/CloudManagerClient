@@ -54,7 +54,10 @@
         </div>
       </div>
       <!-- download selector -->
-      <a class="flex items-center ml-4">
+      <a
+        @click="handleDownloadMenuOpen"
+        class="flex items-center ml-4 cursor-pointer relative"
+      >
         <div class="text-gray-700">
           <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -74,6 +77,41 @@
               d="M10.004 14.72V7.876H8.827v6.846l-1.524-1.452-.83.793 2.942 2.813 2.943-2.813-.83-.793-1.524 1.452z"
             />
           </svg>
+        </div>
+        <!-- download dropdown  -->
+
+        <div
+          v-if="isDownloadMenuOpen"
+          class="bg-white shadow-lg rounded-md py-2 absolute bottom-5 downloadCard"
+        >
+          <a
+            href="#"
+            class="block text-gray-800 uppercase  px-5 py-1 hover:bg-gray-200 active:bg-gray-600 active:text-gray-100 text-sm"
+            >pdf</a
+          >
+          <a
+            href="#"
+            class="block  uppercase  px-5 py-1  active:bg-gray-600 active:text-gray-100 text-sm bg-gray-800 text-white"
+            >csv</a
+          >
+          <a
+            href="#"
+            class="block text-gray-800 uppercase  px-5 py-1 hover:bg-gray-200 active:bg-gray-600 active:text-gray-100 text-sm"
+            >jpeg</a
+          >
+          <a
+            href="#"
+            class="block text-gray-800 uppercase  px-5 py-1 hover:bg-gray-200 active:bg-gray-600 active:text-gray-100 text-sm"
+          >
+            xls</a
+          >
+
+          <a
+            href="#"
+            class="block text-gray-800 uppercase  px-5 py-1 hover:bg-gray-200 active:bg-gray-600 active:text-gray-100 text-sm"
+          >
+            ect</a
+          >
         </div>
       </a>
     </div>
@@ -100,8 +138,21 @@ export default {
   data() {
     return {
       menuList: ['aws', 'azure', 'gcd', 'oci', 'ibm', 'alibaba'],
-      currentDownloadFormat: 'csv'
+      currentDownloadFormat: 'csv',
+      isDownloadMenuOpen: false
+    }
+  },
+  methods: {
+    handleDownloadMenuOpen() {
+      this.isDownloadMenuOpen = !this.isDownloadMenuOpen
     }
   }
 }
 </script>
+
+<style lang="css">
+.downloadCard {
+  top: 40px;
+  right: 0;
+}
+</style>

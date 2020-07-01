@@ -27,173 +27,6 @@
           />
         </svg>
       </button>
-      <nav
-        v-if="isNavOpen"
-        class=" absolute w-full max-w-md shadow-md mt-32 rounded-md overflow-hidden "
-      >
-        <div class=" flex flex-col text-sm items-center">
-          <!-- instance one -->
-          <div
-            class="pt-3 flex justify-between w-full text-gray-800 bg-white capitalize cursor-pointer"
-          >
-            <a
-              @click="handleDashboardNav"
-              class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800 bg-gray-800 text-gray-lightest"
-            >
-              Dashboard
-            </a>
-            <a
-              href="#"
-              class="mx-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
-              >Account management
-              <div class="ml-2">
-                <svg
-                  class="w-4 h-4 fil-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
-            </a>
-          </div>
-          <!-- another instance  -->
-
-          <div
-            class="pt-3 flex justify-between w-full text-gray-800 bg-white capitalize"
-          >
-            <a
-              @click="handleNavigation"
-              href="#"
-              class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800"
-            >
-              cost management
-              <div class="ml-2 text-current">
-                <svg
-                  class="w-4 h-4 fil-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
-            </a>
-            <a
-              href="#"
-              class="mx-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
-              >asset management
-              <div class="ml-2">
-                <svg
-                  class="w-4 h-4 fil-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
-            </a>
-          </div>
-
-          <!-- another instance  -->
-
-          <div
-            class="pt-3 flex justify-between w-full text-gray-800 bg-white capitalize"
-          >
-            <a
-              href="#"
-              class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800"
-            >
-              security & compliance
-              <div class="ml-2 text-current">
-                <svg
-                  class="w-4 h-4 fil-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
-            </a>
-            <a
-              href="#"
-              class="mx-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
-              >cloud monitoring
-              <div class="ml-2">
-                <svg
-                  class="w-4 h-4 fil-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
-            </a>
-          </div>
-          <!-- another instance  -->
-
-          <div
-            class="py-3 flex justify-between w-full text-gray-800 bg-white capitalize"
-          >
-            <a
-              href="#"
-              class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800"
-            >
-              cost optimisation
-              <div class="ml-2 text-current">
-                <svg
-                  class="w-4 h-4 fil-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
-            </a>
-            <a
-              href="#"
-              class="mx-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
-              >service monitoring
-              <div class="ml-2">
-                <svg
-                  class="w-4 h-4 fil-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
-            </a>
-          </div>
-        </div>
-      </nav>
     </div>
     <!-- messages -->
     <a class="text-gray-lightest mx-4 lg:ml-4 lg:mr-5 relative flex" href="#">
@@ -229,7 +62,7 @@
     <div class="flex items-center items-end ml-auto">
       <!-- search control -->
       <div>
-        <div class="lg:hidden flex items-center">
+        <a class="lg:hidden flex items-center cursor-pointer">
           <svg
             class="fill-current w-8 h-8 text-white"
             xmlns="http://www.w3.org/2000/svg"
@@ -241,7 +74,7 @@
               d="M20.916 20.01l5.748 5.748-.905.905-5.747-5.747.904-.905z"
             />
           </svg>
-        </div>
+        </a>
         <div
           class="hidden lg:flex text-xs capitalize mr-4 relative items-center"
         >
@@ -316,9 +149,10 @@
               d="M12 20a2 2 0 110-4 2 2 0 010 4zm0-6a2 2 0 110-4 2 2 0 010 4zm0-6a2 2 0 110-4 2 2 0 010 4z"
             />
           </svg>
+          <!-- user dropdown card -->
           <div
             v-if="isOpen"
-            class="bg-white shadow-lg rounded-md py-2 absolute bottom-5 -ml-24 mt-2"
+            class="bg-white shadow-lg rounded-md py-2 absolute bottom-5 z-10 userCard"
           >
             <a
               href="#"
@@ -344,6 +178,175 @@
         </a>
       </div>
     </div>
+    <!-- dashboard Menu -->
+
+    <nav
+      v-if="isNavOpen"
+      class=" absolute w-full max-w-md shadow-md rounded-md overflow-hidden navMenu"
+    >
+      <div class=" flex flex-col text-sm items-center">
+        <!-- instance one -->
+        <div
+          class="pt-3 flex justify-between w-full text-gray-800 bg-white capitalize cursor-pointer"
+        >
+          <a
+            @click="handleDashboardNav"
+            class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800 bg-gray-800 text-gray-lightest"
+          >
+            Dashboard
+          </a>
+          <a
+            href="#"
+            class="mx-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
+            >Account management
+            <div class="ml-2">
+              <svg
+                class="w-4 h-4 fil-current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+        <!-- another instance  -->
+
+        <div
+          class="pt-3 flex justify-between w-full text-gray-800 bg-white capitalize"
+        >
+          <a
+            @click="handleNavigation"
+            href="#"
+            class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800"
+          >
+            cost management
+            <div class="ml-2 text-current">
+              <svg
+                class="w-4 h-4 fil-current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="mx-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
+            >asset management
+            <div class="ml-2">
+              <svg
+                class="w-4 h-4 fil-current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <!-- another instance  -->
+
+        <div
+          class="pt-3 flex justify-between w-full text-gray-800 bg-white capitalize"
+        >
+          <a
+            href="#"
+            class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800"
+          >
+            security & compliance
+            <div class="ml-2 text-current">
+              <svg
+                class="w-4 h-4 fil-current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="mx-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
+            >cloud monitoring
+            <div class="ml-2">
+              <svg
+                class="w-4 h-4 fil-current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+        <!-- another instance  -->
+
+        <div
+          class="py-3 flex justify-between w-full text-gray-800 bg-white capitalize"
+        >
+          <a
+            href="#"
+            class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800"
+          >
+            cost optimisation
+            <div class="ml-2 text-current">
+              <svg
+                class="w-4 h-4 fil-current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="mx-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
+            >service monitoring
+            <div class="ml-2">
+              <svg
+                class="w-4 h-4 fil-current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5 5.25l5 4.5 5-4.5 1.667 1.5-6.667 6-6.667-6L5 5.25z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </nav>
   </div>
 </template>
 <script>
@@ -377,3 +380,14 @@ export default {
   }
 }
 </script>
+
+<style lang="css">
+.userCard {
+  top: 34px;
+  right: 10px;
+}
+.navMenu {
+  left: 20%;
+  top: 54px;
+}
+</style>
