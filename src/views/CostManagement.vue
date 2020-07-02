@@ -4,10 +4,10 @@
     <SecondaryBar :subMenu="true" :currentDir="currentDir" />
 
     <div
-      class="mt-20 bg-white py-4 pb-6 lg:mx-2 lg:border lg:border-gray-200 lg:bg-transparent lg:border-none"
+      class="mt-20 bg-white pt-4  pb-6 lg:mx-2 lg:border lg:border-gray-200 lg:bg-transparent lg:border-none"
     >
       <div
-        class="flex w-full ml-6 lg:ml-0 lg:bg-app-cardBg lg:pr-6 lg:py-2 rounded lg:shadow-xs lg:mb-24"
+        class="flex w-full pl-6 lg:ml-0 lg:bg-app-cardBg lg:pr-6 lg:py-2 rounded lg:shadow-xs lg:mb-24"
       >
         <div
           class="flex justify-between w-full max-w-lg py-4 lg:max-w-lg lg:ml-auto
@@ -131,7 +131,9 @@
             </div>
           </div>
         </div>
-        <div class="flex lg:order-first lg:w-8/12 w-full mt-12 lg:mt-0">
+        <div
+          class="flex lg:order-first lg:w-8/12 w-full mt-12 pt-12 lg:pt-0 lg:mt-0 bg-app-background"
+        >
           <v-chart :options="options" autoresize />
         </div>
       </div>
@@ -172,8 +174,10 @@
         >
           <!-- empty on desktop -->
         </div>
-        <div class="flex w-full lg:w-3/5 px-6 pt-12 lg:pt-0 lg:px-0 lg:pl-4">
-          <div class="shadow-md flex w-full rounded">
+        <div
+          class="flex flex-col w-full lg:w-3/5 px-6 pt-12 lg:pt-0 lg:px-0 lg:pl-4"
+        >
+          <div class="shadow-xs flex w-full rounded mb-6">
             <el-table
               :data="tableData"
               stripe
@@ -213,6 +217,12 @@
                 </template>
               </el-table-column>
             </el-table>
+          </div>
+          <div class="border-t border-gray-200 flex pr-20">
+            <span
+              class="text-gray-700 text-xs font-semibold  capitalize ml-auto mt-2 -mr-2"
+              >load more</span
+            >
           </div>
         </div>
       </div>
