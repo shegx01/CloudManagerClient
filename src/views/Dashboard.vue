@@ -297,7 +297,7 @@
       </div>
       <!--others security overview -->
       <div
-        class="bg-white w-full lg:rounded-sm lg:mr-2 lg:border-t lg:border-b lg:border-r lg:border-gray-200 pt-4"
+        class="bg-white w-full lg:rounded-sm lg:mr-2 lg:border-t lg:border-b lg:border-r lg:border-gray-200 pt-10 lg:pt-0"
       >
         <!-- section header -->
         <div class="flex">

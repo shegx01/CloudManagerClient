@@ -10,7 +10,7 @@
     </a>
     <!-- Navigation Menu -->
     <div class="flex items-center px-4 border-l border-r border-gray-900">
-      <span class="font-bold capitalize text-gray-600 text-xl">Dashboard</span>
+      <span class="font-bold capitalize text-gray-600 text-lg">Dashboard</span>
       <button
         @click="toggleNavOpen"
         class="text-gray-600 pl-5 lg:pl-8 cursor-pointer focus:outline-none"
@@ -191,13 +191,13 @@
         >
           <a
             @click="handleDashboardNav"
-            class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800 bg-gray-800 text-gray-lightest"
+            class="ml-3 flex items-center text-xs font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800 bg-gray-800 text-gray-lightest"
           >
             Dashboard
           </a>
           <a
             href="#"
-            class="mx-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
+            class="mx-3 flex items-center text-sxsfont-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
             >Account management
             <div class="ml-2">
               <svg
@@ -222,7 +222,7 @@
           <a
             @click="handleNavigation"
             href="#"
-            class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800"
+            class="ml-3 flex items-center text-xs font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800"
           >
             cost management
             <div class="ml-2 text-current">
@@ -241,7 +241,7 @@
           </a>
           <a
             href="#"
-            class="mx-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
+            class="mx-3 flex items-center text-xs font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
             >asset management
             <div class="ml-2">
               <svg
@@ -266,7 +266,7 @@
         >
           <a
             href="#"
-            class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800"
+            class="ml-3 flex items-center text-xs font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800"
           >
             security & compliance
             <div class="ml-2 text-current">
@@ -285,7 +285,7 @@
           </a>
           <a
             href="#"
-            class="mx-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
+            class="mx-3 flex items-center text-xs font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
             >cloud monitoring
             <div class="ml-2">
               <svg
@@ -309,7 +309,7 @@
         >
           <a
             href="#"
-            class="ml-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800"
+            class="ml-3 flex items-center text-xs font-semibold whitespace-no-wrap w-1/2 pl-2 py-2 rounded hover:bg-gray-200 hover:text-gray-800"
           >
             cost optimisation
             <div class="ml-2 text-current">
@@ -328,7 +328,7 @@
           </a>
           <a
             href="#"
-            class="mx-3 flex items-center text-sm font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
+            class="mx-3 flex items-center text-xs font-semibold whitespace-no-wrap w-1/2 pl-2 py-1 rounded hover:bg-gray-200"
             >service monitoring
             <div class="ml-2">
               <svg

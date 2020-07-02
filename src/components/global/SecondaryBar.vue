@@ -4,8 +4,8 @@
   >
     <!-- current page -->
     <div class="relative self-center flex">
-      <h2 class="text-gray-800 capitalize font-medium">{{ currentDir }}</h2>
-      <span class="block h-1 bg-gray-800 w-full absolute -bottom-3"></span>
+      <h4 class="text-gray-800 capitalize font-medium">{{ currentDir }}</h4>
+      <span class="block h-1 bg-gray-600 w-full absolute -bottom-3"></span>
     </div>
     <!-- secondary menu -->
     <div v-if="subMenu" class="flex">
@@ -13,8 +13,10 @@
         v-for="(item, idx) in menuList"
         :key="idx"
         href="#"
-        class="text-gray-800 font-semibold uppercase self-center py-3 px-4"
-        :class="[idx === 0 ? 'bg-gray-darkest text-gray-lightest' : '']"
+        class="text-gray-700 font-normal capitalize self-center py-3 px-4"
+        :class="[
+          idx === 0 ? 'bg-gray-darkest text-gray-lightest rounded-b-sm' : ''
+        ]"
         >{{ item }}</a
       >
     </div>
@@ -38,10 +40,10 @@
               />
             </svg>
           </div>
-          <span class="text-gray-700 uppercase font-semibold">{{
+          <span class="text-gray-700 text-xs uppercase font-semibold">{{
             currentFilter
           }}</span>
-          <div class="ml-2">
+          <div class="ml-1">
             <svg class="w-4 h-4 fil-current" xmlns="http://www.w3.org/2000/svg">
               <path
                 fill-rule="evenodd"

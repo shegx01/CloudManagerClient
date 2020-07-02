@@ -1,11 +1,15 @@
 # cloud-manager-client
 
 ## Project setup
+
+## Change into project directory and install dependencies
+
 ```
 yarn install
 ```
-
+### yarn is used as the package manager or use npm if you like
 ### Compiles and hot-reloads for development
+
 ```
 yarn serve
 ```
@@ -19,6 +23,3 @@ yarn build
 ```
 yarn lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
