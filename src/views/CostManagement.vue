@@ -219,9 +219,10 @@
             </el-table>
           </div>
           <div class="border-t border-gray-200 flex pr-20">
-            <span
+            <a
+              href="#"
               class="text-gray-700 text-xs font-semibold  capitalize ml-auto mt-2 -mr-2"
-              >load more</span
+              >load more</a
             >
           </div>
         </div>
